@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3DIT - Testbed</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+
+		<link rel="shortcut icon" href="img/BoxSmall.ico">		
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />
+
+		<style>
+
+		#listOfNavigationTechniques {}
+		#listOfNavigationTechniques .selected {text-decoration: underline; color:#3072b1;}
+		#viewer {height: 100%; width: 100%; border: 0px;}
+
+		</style>
+		<script>
+
+
+		$(function() {
+		  $( "input[type=submit], button" )
+		    .button()
+		    .click(function( event ) {
+		      event.preventDefault();
+		    });
+		});
+
+		$(function() {
+		  $( "#leftMenu" ).buttonset();
+		});
+
+		$(function() {
+		  $( "#hideButton" ).button({
+		    icons: {
+		      primary: "ui-icon ui-icon-carat-1-w"
+		    },
+		    text: false
+		  });		  
+		});
+
+		$(function() {
+		  $( "#showButton" ).button({
+		    icons: {
+		      primary: "ui-icon ui-icon-carat-1-e"
+		    },
+		    text: false
+		  });		  
+		});
+
+		function hideShowLeftPart() {
+			$( "#leftPart" ).toggle( "drop" );
+		}
+
+		$(function()
+		{
+		  $('input.leftMenu').change( function( event )
+		  {
+		    console.log( $(this).attr("id") );
+		    if($(this).attr("id") == "leftMenu1")
+		    {
+		    	$( "#navigation" ).show( "fade" );
+		    	$( "#manipulation" ).hide( "fade" );
+		    }
+		    else if($(this).attr("id") == "leftMenu2")
+		    {
+		    	$( "#navigation" ).hide( "fade" );
+		    	$( "#manipulation" ).show( "fade" );
+		    }		    
+		  })
+		});
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="shadowH_Top">
+			<div class="shadowH1"></div><div class="shadowH2"></div><div class="shadowH3"></div>
+		</div>
+
+		<div class="shadowH_Bottom">
+			<div class="shadowH3"></div><div class="shadowH2"></div><div class="shadowH1"></div>
+		</div>
+
+	    <div class="pageBox">
+	        <div class="headerBox">
+	        	<img src="img/Logo3DIT.png" style="float: left; margin: 0px 20px 0px 10px;"/>
+
+				<h1 id="logo">3D Interaction Testbed</h1>
+
+				<div id="navigationPanel">
+				    <a href="index.html">home</a> <span class="navSpan">|</span> <a href="testbed.html">testbed</a> <span class="navSpan">|</span> <a>taxonomy</a> <span class="navSpan">|</span> <a>team</a> <span class="navSpan">|</span> <a>contact</a> <span class="navSpan">|</span> <a>resources</a>
+				</div>
+
+	        </div>
+	        <div class="contentBox">
+
+	            <div  class="contentBoxLeft" id="leftPart">
+	            	<div class="contentBoxLeftWhite">
+	            		<div class="contentBoxLeftContent">
+	            			<div class="menuLeft">
+								<form>
+								  <div id="leftMenu" style="float: left">
+								    <input type="radio" id="leftMenu1" name="leftMenu" class="leftMenu" checked="checked"/><label for="leftMenu1">Navigation</label>
+								    <input type="radio" id="leftMenu2" name="leftMenu" class="leftMenu"/><label for="leftMenu2">Selection&Manipulation</label>
+								  </div>
+								</form>
+								<button id="hideButton" onclick="hideShowLeftPart();" style="margin: 0px; padding: 0px; float: right">Hide Button</button>
+							</div>
+
+							<div id="navigation">
+								<p>List of navigation techniques implemented in our testbed.</p>
+								<div id="listOfNavigationTechniques"></div>
+							</div>
+
+							<div id="manipulation" style="display:none;">
+								<p>List of selection and manipulation techniques implemented in our testbed.</p>
+								<h2>Selection</h2>
+								<ul>
+									<li><a>2D Cursor</a></li>
+									<li><a>3D Cursor</a></li>
+								</ul>
+								<h2>Manipulation</h2>
+								<ul>
+									<li><a>Translation</a></li>
+									<li><a>Rotation</a></li>
+								</ul>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>															
+							</div>
+
+							<div class="contentBoxFooter">
+								<h1>Interaction</h1>
+							</div>
+
+	            		</div>         			            		
+	            	</div>
+
+				    <div class="contentBoxLeftShadow">
+						<div class="shadowV1"></div><div class="shadowV2"></div><div class="shadowV3"></div>						
+					</div>
+
+	            </div>
+
+				<div  class="contentBoxLeftHidden">
+	            	<div class="contentBoxLeftHiddenWhite">
+	            		<div class="contentBoxLeftHiddenContent">
+	        				<button id="showButton" onclick="hideShowLeftPart();">Show Button</button>
+	        				<div class="verticallyAlignedContainer">
+		        				<div class="verticallyAligned">
+		        					<h1 class="rotate">Interaction</h1>
+		        				</div>
+	        				</div>
+	            		</div>         			            		
+	            	</div>
+				    <div class="contentBoxLeftHiddenShadow">
+						<div class="shadowV1"></div><div class="shadowV2"></div><div class="shadowV3"></div>						
+					</div>
+
+	        	</div>
+
+	            <div class="contentBoxCenter">
+	            	<iframe id="viewer"></iframe>
+	            </div>
+
+
+	        </div>
+	        <div class="footerBox">
+	        	<div id="footer"><p style="margin-top: 4px;">Copyright © 2013 <a href="http://team.inria.fr/potioc/">Inria</a></p></div>
+	        </div>
+	    </div>
+
+
+
+		<script>
+
+		var files = {		
+			"General Movement": [
+				"Navigation_Rotate-Pan-Zoom_-_3D_Map",
+				"Navigation_First_Person_Perspective"
+			],
+			"Targeted Movement": [
+				"Navigation_Go_To",
+				"Navigation_Navidget"
+			],
+			"Specified Trajectory Movement": [
+				"Navigation_Guided_Tour_-_3D_Map"
+			],			
+			"Templates": [
+				"Navigation_Template_-_Non-Interactive",
+				"Navigation_Template_-_Interactive"
+			]		
+		};
+
+		var listOfNavigationTechniques = document.getElementById( 'listOfNavigationTechniques' );
+		var viewer = document.getElementById( 'viewer' );
+
+		var container = document.createElement( 'div' );
+		listOfNavigationTechniques.appendChild( container );
+
+		var links = {};
+		var selected = null;
+
+		for ( var key in files ) {
+
+			var section = files[ key ];
+
+			var div = document.createElement( 'h2' );
+			div.textContent = key;
+			container.appendChild( div );
+			var ul = document.createElement( 'ul' );
+			container.appendChild( ul );
+
+			for ( var i = 0; i < section.length; i ++ ) {
+
+				( function ( file, ul ) {
+
+					var name = file.split( '_' );
+					name.shift();
+					name = name.join( ' ' );
+
+					var li = document.createElement( 'li' );
+					var a = document.createElement( 'a' );
+					a.textContent = name;
+					li.appendChild( a );
+
+					a.addEventListener( 'click', function () {
+					 	load( file );
+					} );
+
+					ul.appendChild( li );
+					links[ file ] = a;
+
+				} )( section[ i ], ul );
+
+			}
+
+		}
+
+		var load = function ( file ) {
+
+			if ( selected !== null ) links[ selected ].className = '#listOfManipulationTechniques';
+
+			links[ file ].className = '#listOfManipulationTechniques selected';
+
+			window.location.hash = file;
+			viewer.src = file + '.html';
+			viewer.focus();
+
+			selected = file;
+
+		};
+
+		if ( window.location.hash !== '' ) {
+
+			load( window.location.hash.substring( 1 ) );
+
+		}
+
+
+		</script>
+
+	</body>
+</html>
