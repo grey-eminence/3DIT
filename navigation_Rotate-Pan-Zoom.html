@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rotate-Pan-Zoom</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />
+
+		<script>
+
+		$(function() {
+		  $( "input[type=submit], button" )
+		    .button()
+		    .click(function( event ) {
+		      event.preventDefault();
+		    });
+		});
+
+		$(function() {
+		  $( "#rightMenu" ).buttonset();
+		});
+
+		$(function() {
+		  $( "#hideButtonRight" ).button({
+		    icons: {
+		      primary: "ui-icon ui-icon-carat-1-e"
+		    },
+		    text: false
+		  });		  
+		});
+
+		$(function() {
+		  $( "#showButtonRight" ).button({
+		    icons: {
+		      primary: "ui-icon ui-icon-carat-1-w"
+		    },
+		    text: false
+		  });		  
+		});
+
+		function hideShowRightPart() {
+			$( "#rightPart" ).toggle( "drop", {direction: 'right'});
+		}
+
+		$(function()
+		{
+		  $('input.rightMenu').change( function( event )
+		  {
+		    console.log( $(this).attr("id") );
+		    if($(this).attr("id") == "rightMenu1")
+		    {
+		    	$( "#about" ).show( "fade" );
+		    	$( "#options" ).hide( "fade" );
+		    }
+		    else if($(this).attr("id") == "rightMenu2")
+		    {
+		    	$( "#about" ).hide( "fade" );
+		    	$( "#options" ).show( "fade" );
+		    }		    
+		  })
+		});
+
+		</script>
+
+	</head>
+
+	<body>
+		
+		<div  class="contentBoxRight" id="rightPart"> <!--style="display:none;">-->
+	    	<div class="contentBoxRightWhite">
+	    		<div class="contentBoxRightContent">
+	    			<div class="menuRight">
+
+	    				<button id="hideButtonRight" onclick="hideShowRightPart();" style="margin: 0px; padding: 0px; float: left;">Hide Button</button>
+						<form>
+						  <div id="rightMenu" style="float: right; margin-right: 3px;">
+						    <input type="radio" id="rightMenu1" name="rightMenu" class="rightMenu" checked="checked"/><label for="rightMenu1">About</label>
+						    <input type="radio" id="rightMenu2" name="rightMenu" class="rightMenu"/><label for="rightMenu2">Options</label>
+						  </div>
+						</form>
+						
+					</div>
+					<div id="about">
+						<p>Rotating, panning, and zooming are the primary camera movements used in almost every 3D modelling environments (e.g., Autodesk’s 3ds Max, Maya, or Blender). They are standard ways to inspect objects, and work well with a pointing device such as a mouse since all of them are at most 2-dimensional operations.</p>
+						
+						<p>Rotate (also referred to as Tumble or Sweep) - refers to orbiting the camera around a central point in any direction - the sweep operation sweeps the camera around horizontally and vertically on a virtual spherical track, keeping it focused at the same reference point.</p>
+						<img src="img/Rotation_226x118.png" style="margin: 0px 15px 10px 15px;"/>
+						
+						<p>Pan - in the context of 3D interaction, Pan refers to translation of the camera along x and y axes.</p>
+						<!-- <img src="img/Panning_258x134.png" style="margin: 10px 5px 10px 5px;"/> -->
+						
+						<p>Zoom (also referred to as Dolly) - refers to translation of the camera along its line of sight.</p>
+						<!-- <img src="img/Zooming_258x134.png" style="margin: 10px 5px 10px 5px;"/> -->
+						
+						<p>For example, to navigate in the viewport in Blender, the user needs to drag the mouse while holding the Middle Mouse Button (MMB) pressed to rotate, additionally pressing the Shift button on the keyboard to pan (Shift MMB), and holding the Ctrl button to zoom (Ctrl MMB). It is worth to mention that some applications (including e.g., VRML/X3D viewers) additionally implement Look Around technique that changes the orientation of the camera but keeps it at a fixed position.</p>
+					</div>
+
+					<div id="options" style="display:none;">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					</div>
+
+					<div class="contentBoxFooter">
+						<h1>About&amp;Options</h1>
+					</div>
+
+	    		</div>         			            		
+	    	</div>
+	    	
+		    <div class="contentBoxRightShadow">
+				<div class="shadowV3"></div><div class="shadowV2" style="left:1px;"></div><div class="shadowV1" style="left:2px;"></div>						
+			</div>
+	    </div>
+
+
+		<div  class="contentBoxRightHidden">
+	    	<div class="contentBoxRightHiddenWhite">
+	    		<div class="contentBoxRightHiddenContent">
+					<button id="showButtonRight" onclick="hideShowRightPart();">Hide Button</button>
+					<div class="verticallyAlignedContainer">
+	    				<div class="verticallyAligned">
+	    					<h1 class="rotate">About&amp;Options</h1>
+	    				</div>
+					</div>
+	    		</div>         			            		
+	    	</div>
+		    <div class="contentBoxRightHiddenShadow">
+				<div class="shadowV3"></div><div class="shadowV2" style="left:1px;"></div><div class="shadowV1" style="left:2px;"></div>					
+			</div>
+
+		</div>
+
+
+		<script src="../three.js/build/three.min.js"></script>
+
+		
+		<script src="js/3DIT.js"></script>
+
+		<script src="../three.js/examples/js/controls/OrbitControls.js"></script>
+		<script src="../three.js/examples/js/controls/FirstPersonControls.js"></script>
+
+		<script src="../three.js/examples/js/loaders/MTLLoader.js"></script>
+		<script src="../three.js/examples/js/loaders/OBJMTLLoader.js"></script>
+
+		<script src="../three.js/examples/js/Detector.js"></script>
+		<script src="../three.js/examples/js/libs/stats.min.js"></script>
+
+		<script type="x-shader/x-vertex" id="vertexShader">
+
+			varying vec3 vWorldPosition;
+
+			void main() {
+
+				vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+				vWorldPosition = worldPosition.xyz;
+
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+			}
+
+		</script>
+
+		<script type="x-shader/x-fragment" id="fragmentShader">
+
+			uniform vec3 topColor;
+			uniform vec3 bottomColor;
+			uniform float offset;
+			uniform float exponent;
+
+			varying vec3 vWorldPosition;
+
+			void main() {
+
+				float h = normalize( vWorldPosition + offset ).y;
+				gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( h, exponent ), 0.0 ) ), 1.0 );
+
+			}
+
+		</script>
+
+		<script>
+
+			var SCREEN_WIDTH = window.innerWidth;
+			var SCREEN_HEIGHT = window.innerHeight;
+
+			var container,stats;
+			var camera, scene, renderer, controls;
+
+			var controls, orbitControls, fpsControls;
+
+			var clock = new THREE.Clock();
+
+			init();
+			animate();
+
+			function init() {
+
+
+				container = document.createElement( 'div' );
+				//container = document.getElementById("map3D")
+				document.body.appendChild( container );
+
+				// CAMERA
+
+				camera = new THREE.PerspectiveCamera( 40, SCREEN_WIDTH / SCREEN_HEIGHT, 2, 10000 );
+				camera.position.x = 700;
+				camera.position.z = -500;
+				camera.position.y = 180;
+
+				// SCENE
+
+				scene = new THREE.Scene();
+				scene.fog = new THREE.Fog( 0xffffff, 1000, 10000 );
+
+				// CONTROLS
+
+				controls = new THREE.OrbitControls( camera );
+
+				// LIGHTS
+				var ambientLight = new THREE.AmbientLight( 0x999999 );
+				scene.add(ambientLight);
+
+				var directionalLight = new THREE.DirectionalLight( 0xffffff, 1.475 );
+				directionalLight.position.set( 100, 100, -100 );
+				directionalLight.castShadow = true;
+				scene.add(directionalLight);
+
+				hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.6 );
+				hemiLight.color.setHSL( 0.6, 1, 0.6 );
+				hemiLight.groundColor.setHSL( 0.095, 1, 0.75 );
+				hemiLight.position.set( 0, 500, 0 );
+				scene.add( hemiLight );
+
+				// SKYDOME
+
+				var vertexShader = document.getElementById( 'vertexShader' ).textContent;
+				var fragmentShader = document.getElementById( 'fragmentShader' ).textContent;
+				var uniforms = {
+					topColor: 	 { type: "c", value: new THREE.Color( 0x0077ff ) },
+					bottomColor: { type: "c", value: new THREE.Color( 0xffffff ) },
+					offset:		 { type: "f", value: 400 },
+					exponent:	 { type: "f", value: 0.6 }
+				}
+				uniforms.topColor.value.copy( hemiLight.color );
+
+				scene.fog.color.copy( uniforms.bottomColor.value );
+
+				var skyGeo = new THREE.SphereGeometry( 4000, 32, 15 );
+				var skyMat = new THREE.ShaderMaterial( { vertexShader: vertexShader, fragmentShader: fragmentShader, uniforms: uniforms, side: THREE.BackSide } );
+
+				var sky = new THREE.Mesh( skyGeo, skyMat );
+				scene.add( sky );
+
+				// RENDERER
+
+				renderer = new THREE.WebGLRenderer( { antialias: true, alpha: false } );
+				renderer.setClearColor( scene.fog.color, 1 );
+				renderer.setSize( SCREEN_WIDTH, SCREEN_HEIGHT );
+				renderer.domElement.style.position = "relative";
+				container.appendChild( renderer.domElement );
+
+				renderer.gammaInput = true;
+				renderer.gammaOutput = true;
+				renderer.physicallyBasedShading = true;
+
+				// STATS
+/*
+				stats = new Stats();
+				container.appendChild( stats.domElement );
+*/
+
+				// ground
+
+				var initColor = new THREE.Color( 0x497f13 );
+				var initTexture = THREE.ImageUtils.generateDataTexture( 1, 1, initColor );
+
+				var groundMaterial = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0x000000, map: initTexture } );
+
+				var groundTexture = THREE.ImageUtils.loadTexture( "../three.js/examples/textures/terrain/grasslight-big.jpg", undefined, function() { groundMaterial.map = groundTexture } );
+				groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping;
+				groundTexture.repeat.set( 2500, 2500 );
+				groundTexture.anisotropy = 16;
+
+				var mesh = new THREE.Mesh( new THREE.PlaneGeometry( 20000, 20000 ), groundMaterial );
+				mesh.position.y = 0;
+				mesh.rotation.x = - Math.PI / 2;
+				mesh.receiveShadow = true;
+				scene.add( mesh );
+
+				ThreeDIT.LoadCity("models/city.json");
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function createScene( geometry, materials, x, y, z, b, s ) {
+
+				var mesh = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
+				mesh.position.set( x, y, z );
+				mesh.scale.set( s, s, s );
+				scene.add( mesh );
+
+			}
+
+			//
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+				render();
+				//stats.update();
+
+			}
+
+			function render() {
+
+				var delta = clock.getDelta();
+				controls.update( delta );
+
+				renderer.render( scene, camera );
+
+			}
+
+
+		</script>
+
+	</body>
+</html>

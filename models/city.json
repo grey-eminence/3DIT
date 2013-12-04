@@ -1,0 +1,258 @@
+{
+    "version": 1,
+    "models": [
+        {
+            "name": "AlphaVille_CenterPart",
+            "type": "obj",
+            "url": "models/streets/AlphaVille_CenterPart.obj",
+            "url_mtl": "models/streets/AlphaVille_CenterPart.mtl",
+            "instances": [
+                {
+                    "address" : "unspecified",
+                    "position" : [0, 0, 0],
+                    "rotation" : [0, 0, 0]
+                }
+            ]
+        },
+        {
+            "name": "AlphaVille_NorthPart",
+            "type": "obj",
+            "url": "models/streets/AlphaVille_NorthPart.obj",
+            "url_mtl": "models/streets/AlphaVille_NorthPart.mtl",
+            "instances": [
+                {
+                    "address" : "unspecified",
+                    "position" : [0, 0, -1000],
+                    "rotation" : [0, 0, 0]
+                }
+            ]
+        }, 
+        {
+            "name": "AlphaVille_SouthPart",
+            "type": "obj",
+            "url": "models/streets/AlphaVille_SouthPart.obj",
+            "url_mtl": "models/streets/AlphaVille_SouthPart.mtl",
+            "instances": [
+                {
+                    "address" : "unspecified",
+                    "position" : [0, 0, 1000],
+                    "rotation" : [0, 0, 0]
+                }
+            ]
+        },
+        {
+            "name": "AlphaVille_WestPart",
+            "type": "obj",
+            "url": "models/streets/AlphaVille_WestPart.obj",
+            "url_mtl": "models/streets/AlphaVille_WestPart.mtl",
+            "instances": [
+                {
+                    "address" : "unspecified",
+                    "position" : [-1000, 0, 0],
+                    "rotation" : [0, 180, 0]
+                }
+            ]
+        },
+        {
+            "name": "AlphaVille_EastPart",
+            "type": "obj",
+            "url": "models/streets/AlphaVille_EastPart.obj",
+            "url_mtl": "models/streets/AlphaVille_EastPart.mtl",
+            "instances": [
+                {
+                    "address" : "unspecified",
+                    "position" : [1000, 0, 0],
+                    "rotation" : [0, 0, 0]
+                }
+            ]
+        },        
+        {
+            "name": "squareBlock",
+            "type": "obj",
+            "url": "models/buildings/squareBlock/SquareBlock.obj",
+            "url_mtl": "models/buildings/squareBlock/SquareBlock.mtl",
+            "instances": [
+                {
+                    "address" : "unspecified",
+                    "position" : [-285.0, 0.3, -275.0],
+                    "rotation" : [0, 180, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-285.0, 0.3, -165.0],
+                    "rotation" : [0, 90, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-285.0, 0.3, -55.0],
+                    "rotation" : [0, 0, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-285.0, 0.3, 55.0],
+                    "rotation" : [0, 180, 0]
+                },                
+                {
+                    "address" : "unspecified",
+                    "position" : [-285.0, 0.3, 165.0],
+                    "rotation" : [0, 90, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-285.0, 0.3, 275.0],
+                    "rotation" : [0, 270, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-175.0, 0.3, -275.0],
+                    "rotation" : [0, 90, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-175.0, 0.3, -165.0],
+                    "rotation" : [0, 270, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-175.0, 0.3, -55.0],
+                    "rotation" : [0, 0, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-175.0, 0.3, 55.0],
+                    "rotation" : [0, 90, 0]
+                },                
+                {
+                    "address" : "unspecified",
+                    "position" : [-175.0, 0.3, 165.0],
+                    "rotation" : [0, 180, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-175.0, 0.3, 275.0],
+                    "rotation" : [0, 0, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-65.0, 0.3, -275.0],
+                    "rotation" : [0, 0, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-65.0, 0.3, -165.0],
+                    "rotation" : [0, 180, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-65.0, 0.3, -55.0],
+                    "rotation" : [0, 0, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-65.0, 0.3, 55.0],
+                    "rotation" : [0, 90, 0]
+                },                
+                {
+                    "address" : "unspecified",
+                    "position" : [-65.0, 0.3, 165.0],
+                    "rotation" : [0, 270, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [-65.0, 0.3, 275.0],
+                    "rotation" : [0, 90, 0]
+                },              
+                {
+                    "address" : "unspecified",
+                    "position" : [65.0, 0.3, -275.0],
+                    "rotation" : [0, 90, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [65.0, 0.3, -165.0],
+                    "rotation" : [0, 270, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [65.0, 0.3, -55.0],
+                    "rotation" : [0, 90, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [65.0, 0.3, 55.0],
+                    "rotation" : [0, 90, 0]
+                },                
+                {
+                    "address" : "unspecified",
+                    "position" : [65.0, 0.3, 165.0],
+                    "rotation" : [0, 180, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [65.0, 0.3, 275.0],
+                    "rotation" : [0, 0, 0]
+                },            
+                {
+                    "address" : "unspecified",
+                    "position" : [175.0, 0.3, -275.0],
+                    "rotation" : [0, 90, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [175.0, 0.3, -165.0],
+                    "rotation" : [0, 270, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [175.0, 0.3, -55.0],
+                    "rotation" : [0, 0, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [175.0, 0.3, 55.0],
+                    "rotation" : [0, 90, 0]
+                },                
+                {
+                    "address" : "unspecified",
+                    "position" : [175.0, 0.3, 165.0],
+                    "rotation" : [0, 180, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [175.0, 0.3, 275.0],
+                    "rotation" : [0, 0, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [285.0, 0.3, -275.0],
+                    "rotation" : [0, 180, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [285.0, 0.3, -165.0],
+                    "rotation" : [0, 90, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [285.0, 0.3, -55.0],
+                    "rotation" : [0, 0, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [285.0, 0.3, 55.0],
+                    "rotation" : [0, 180, 0]
+                },                
+                {
+                    "address" : "unspecified",
+                    "position" : [285.0, 0.3, 165.0],
+                    "rotation" : [0, 90, 0]
+                },
+                {
+                    "address" : "unspecified",
+                    "position" : [285.0, 0.3, 275.0],
+                    "rotation" : [0, 270, 0]
+                }
+            ]             
+        }
+    ]
+}
