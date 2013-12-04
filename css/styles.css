@@ -1,0 +1,129 @@
+﻿body {background:#ddd; color: #333; font-family: 'Segoe UI', Verdana; line-height:1.3; padding:0; margin:0; font-size: 10px; overflow: hidden;}
+h1, h2, h3 {font-weight:normal; margin:0px; padding:0px;}
+h1 {color:#bbb; font-size: 28px; margin: 2px; padding: 0; text-align: center;}
+h2 {color:#aaa; font-size: 18px; margin-bottom: 10px;}
+h3 {color:#bbb; font-size: 16px; }
+p {color:#444; font-size: 14px; margin-top: 0;}
+ul {color:#444; font-size: 14px; padding-left: 20px;}
+li {margin-bottom: 2px;}
+
+a {color:#5092d1; text-decoration:none;}
+a:hover {color: #FF6600; text-decoration:underline;cursor:pointer;}
+
+#logo {text-align: left; margin: 10px;}
+
+input {border-color: #ddd; border: #ddd solid 1px; outline: none;}
+input:hover {border: #aaa solid 1px;}
+input:active {border: #999 solid 1px;}
+input:focus {border: #aaa solid 1px;}
+#searchInput {height: 26px; font-size:16px; }
+
+#navigationPanel {position: absolute; top: 0; right: 0; font-family:'Segoe UI', Verdana; font-size: 15px; color: #333; margin: 20px; overflow: hidden;}
+#navigationPanel a.sel {font-size:20px; color:#ccc;}
+#navigationPanel a:hover {}
+.navSpan {color:#ccc; margin:0em 9px;}
+
+
+#directions {color:#444; padding: 30px 0;}
+.directionsInput {height: 20px; font-size:12px; margin: 2px 0; width: 99%; color:#666; }
+#getDirectionsButton {float: right; margin: 10px 0;}
+
+#options, #about, #navigation, #manipulation {padding: 0 5px 0 0; margin: 40px 10px 0 0; position:absolute; overflow-y: auto; height: -webkit-calc(100% - 110px); height: calc(100% - 110px);}
+
+.pageBox { position:absolute; top:0px; left:0px; right:0px; bottom:0px; min-width:200px;}
+.headerBox { position: absolute; width: 100%; height: 60px; background-color: #f9f9f9; z-index: 7;}
+.footerBox { position:absolute; width:100%; height:26px; background-color: #f9f9f9; bottom:0px; z-index: 7;}
+.contentBox { position:absolute; width:100%; top: 60px; bottom:26px; background-color:#999;} 
+
+.contentBoxM { position:absolute; width:100%; top: 60px; bottom:26px; background-color:#999;overflow-y: auto;} 
+.contentBoxMain {width:1000px; height:100%; margin-left: auto; margin-right: auto; z-index: 20;}
+.contentBoxMainWhite { width:994px; height:100%; background-color:#fff; margin-left: 3px;}
+.contentBoxMainContent { width: 994px; display: table-cell; background-color: white; padding: 20px; }
+.contentBoxMainRightShadow {height:100%; width: 3px; z-index: 11; float: right;}
+.contentBoxMain p {color:#444; font-size: 16px; }
+.contentBoxMain h2 {color:#aaa; font-size: 20px; }
+.contentBoxMain ul {color:#444; font-size: 16px; padding-left: 20px;}
+
+.contentBoxLeft { position:absolute; width:300px; height:100%; z-index: 4;}
+.contentBoxLeftWhite { position:absolute; width:297px; height:100%; background-color:#fff; float: left;}
+.contentBoxLeftContent { padding: 12px; }
+.contentBoxLeftShadow {position:absolute; left: 297px; height:100%; width: 3px; z-index: 11;float: left;}
+
+.contentBoxLeftHidden { position:absolute; width:50px; height:100%; z-index: 2;}
+.contentBoxLeftHiddenWhite { position:absolute; width:47px; height:100%; background-color:#fff; }
+.contentBoxLeftHiddenContent { padding: 10px;}
+.contentBoxLeftHiddenShadow {position:absolute; left: 47px; height:100%; width: 3px; z-index: 5;}
+
+.contentBoxRight { position:absolute; width:300px; height:100%; z-index: 10; right:0px;}
+.contentBoxRightWhite { position:absolute; width:297px; height:100%; background-color:#fff; right:0px;}
+.contentBoxRightContent { padding: 12px; }
+.contentBoxRightShadow {position:absolute; left: 0px; height:100%; width: 3px; z-index: 11;}
+
+.contentBoxRightHidden { position:absolute; width:50px; height:100%; z-index: 5; right:0px;}
+.contentBoxRightHiddenWhite { position:absolute; width:47px; height:100%; background-color:#fff; right:0px;}
+.contentBoxRightHiddenContent { padding: 10px; height: 100%;}
+.contentBoxRightHiddenShadow {position:absolute; left: 0px; height:100%; width: 3px; z-index: 5;}
+
+.contentBoxCenter { position:absolute; width:100%; left:0px; height:100%; background-color: #999; }    
+.contentBoxLeft, .contentBoxRight { overflow:auto; overflow-x:hidden; }
+.contentBoxFooter { position:absolute; width: 280px; bottom:0px; height:50px;}  
+
+#footer { text-align: center; margin: 1px;}
+
+.shadowH_Top { position: absolute; top:60px; width: 100%; height: 3px; z-index: 5;}
+.shadowH_Bottom { position: absolute; bottom:26px; width: 100%; height: 3px; z-index: 5;}
+.shadowH1 { background: #000; height: 1px; opacity: 0.15; }
+.shadowH2 { background: #000; height: 1px; opacity: 0.10; }
+.shadowH3 { background: #000; height: 1px; opacity: 0.05; }
+.shadowV1 {position: absolute; background: #000; width: 1px; height: 100%; opacity: 0.15;}
+.shadowV2 {position: absolute; left:1px; background: #000; width: 1px; height: 100%; opacity: 0.10;}
+.shadowV3 {position: absolute; left:2px; background: #000; width: 1px; height: 100%; opacity: 0.05;}
+.shadowV {display: table-cell; background: #000; width: 1px; height: 100%; opacity: 0.15; vertical-align:top;}
+
+#searchDiv {padding: 15px 15px;}
+#searchInput { width: 400px; height: 28px; padding: 0 5px; margin: 0 5px; vertical-align: bottom}
+#searchButton { width: 80px; height: 30px; color: #555; padding: 0px; margin: 0px; }
+
+
+
+#stats { position: absolute; top:0; left: 0 }
+#stats #fps { background: transparent !important }
+#stats #fps #fpsText { color: #abc !important }
+#stats #fps #fpsGraph { display: none }
+
+
+#EGaper {}
+#EGPaper a {opacity:0.8;}
+#EGPaper a:hover { opacity:1;}
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+
+  /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+
+  /* Should be unset in IE9+ I think. */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+  width:20px;
+}
+
+.verticallyAlignedContainer {
+	display: table;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+
+.verticallyAligned {
+    display: table-cell;
+    vertical-align: middle;
+}
