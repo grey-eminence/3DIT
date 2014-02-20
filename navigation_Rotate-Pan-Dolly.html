@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rotate-Pan-Dolly</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+		
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<link href="css/smoothness/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css" />
+
+		<script>
+
+			$(function() {
+				$( "input[type=submit], button" ).button().click(function( event ) {
+					event.preventDefault();
+				});
+			});
+
+			$(function() {
+				$( "#rightMenu" ).buttonset();
+			});
+
+			$(function() {
+				$( "#hideButtonRight" ).button({
+					icons: { primary: "ui-icon ui-icon-carat-1-e" },
+					text: false
+				}); 
+			});
+
+			$(function() {
+				$( "#showButtonRight" ).button({
+					icons: { primary: "ui-icon ui-icon-carat-1-w" },
+					text: false
+				});
+			});
+
+
+			function hideShowRightPart() {
+				$( "#rightPart" ).toggle( "drop", {direction: 'right'});
+			}
+
+			$(function() {
+				$('input.rightMenu').change( function( event ) {
+					
+					if( $(this).attr("id") == "rightMenu1" ) {
+						$( "#about" ).show( "fade" );
+						$( "#options" ).hide( "fade" );
+					}
+					else if( $(this).attr("id") == "rightMenu2" ) {
+						$( "#about" ).hide( "fade" );
+						$( "#options" ).show( "fade" );
+					}
+
+				});
+			});
+
+		</script>
+
+	</head>
+
+	<body>
+		
+		<div  class="contentBoxRight" id="rightPart"> <!--style="display:none;">-->
+	    	<div class="contentBoxRightWhite">
+	    		<div class="contentBoxRightContent">
+	    			<div class="menuRight">
+
+	    				<button id="hideButtonRight" onclick="hideShowRightPart();" style="margin: 0px; padding: 0px; float: left;">Hide Button</button>
+						<form>
+						  <div id="rightMenu" style="float: right; margin-right: 3px;">
+						    <input type="radio" id="rightMenu1" name="rightMenu" class="rightMenu" checked="checked"/><label for="rightMenu1">About</label>
+						    <input type="radio" id="rightMenu2" name="rightMenu" class="rightMenu"/><label for="rightMenu2">Environments&amp;Options</label>
+						  </div>
+						</form>
+						
+					</div>
+					<div id="about">
+						<p>Rotating, panning, and dollying are the primary camera movements used in almost every 3D modelling environments. They are standard ways to inspect objects, and work well with a pointing device such as a mouse since all of them are at most 2D operations.</p>
+						<h2>Rotation</h2>
+						<p>Rotate (also referred to as Tumble or Sweep) - refers to orbiting the camera around a central point in any direction; this operation sweeps the camera around horizontally and vertically on a virtual spherical track, keeping it focused at the same reference point. In this demo, use the left mouse button to rotate.</p>
+						<!-- <img src="img/Rotation_226x118.png" style="margin: 0px 15px 10px 15px;"/> -->
+						<h2>Pan</h2>
+						<p>Pan - in the context of 3D interaction, it refers to translation of the camera along x and y axes. In this demo, use the right mouse button to pan.</p>
+						<!-- <img src="img/Panning_258x134.png" style="margin: 10px 5px 10px 5px;"/> -->
+						<h2>Dolly</h2>
+						<p>Dolly (also referred to as Zoom) - refers to translation of the camera along its line of sight. In this demo, use the middle mouse button or mouse scroll to dolly the camera.</p>
+						<!-- <img src="img/Zooming_258x134.png" style="margin: 10px 5px 10px 5px;"/> -->						
+					</div>
+
+					<div id="options" style="display:none;">
+						<h2>Environments</h2>
+						<p>Rotate/Pan/Dolly set of techniques can be used for interacting with the following types of virtual environments:</p>
+						<ul>
+							<li><a id="SimpleScene">Simple Scene</a></li>
+							<!-- <li><a>Indoor Environment (ToDo)</a></li> -->
+							<li><a id="OutdoorEnvironment">Outdoor Environment</a></li>
+							<li><a>Information Visualisation (ToDo)</a></li>														
+						</ul>
+						<h2>Options</h2>
+						<div class="optionsDiv">
+							<div>
+								<div style="float: left;"><p><span style="padding-right: 10px;">Rotation speed (1-9) : </span></p></div>
+								<div style="float: right;"><p><a id="rotationMinus">-</a><span id="rotationSpan" style="padding: 0 10px;">5</span><a id="rotationPlus">+</a></p></div>
+							</div>
+							<div>
+								<div style="float: left;"><p><span style="padding-right: 10px;">Keyboard pan speed (1-9) : </span></p></div>
+								<div style="float: right;"><p><a id="panMinus">-</a><span id="panSpan" style="padding: 0 10px;">5</span><a id="panPlus">+</a></p></div>
+							</div>
+							<div>
+								<div style="float: left;"><p><span style="padding-right: 10px;">Dolly speed (1-9) : </span></p></div>
+								<div style="float: right;"><p><a id="dollyMinus">-</a><span id="dollySpan" style="padding: 0 10px;">5</span><a id="dollyPlus">+</a></p></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="contentBoxFooter">
+						<h1>About&amp;Options</h1>
+					</div>
+
+	    		</div>         			            		
+	    	</div>
+	    	
+		    <div class="contentBoxRightShadow">
+				<div class="shadowV3"></div><div class="shadowV2" style="left:1px;"></div><div class="shadowV1" style="left:2px;"></div>						
+			</div>
+	    </div>
+
+
+		<div  class="contentBoxRightHidden">
+	    	<div class="contentBoxRightHiddenWhite">
+	    		<div class="contentBoxRightHiddenContent">
+					<button id="showButtonRight" onclick="hideShowRightPart();">Hide Button</button>
+					<div class="verticallyAlignedContainer">
+	    				<div class="verticallyAligned">
+	    					<h1 class="rotate">About&amp;Options</h1>
+	    				</div>
+					</div>
+	    		</div>         			            		
+	    	</div>
+		    <div class="contentBoxRightHiddenShadow">
+				<div class="shadowV3"></div><div class="shadowV2" style="left:1px;"></div><div class="shadowV1" style="left:2px;"></div>					
+			</div>
+		</div>
+
+
+		<script src="js/three.min.js"></script>
+		<script src="js/controls/OrbitControls.js"></script>
+		<script src="js/loaders/MTLLoader.js"></script>
+		<script src="js/loaders/OBJMTLLoader.js"></script>
+
+		<script>
+
+			var camera, controls, scene, renderer;
+
+			init();
+			animate();
+
+			function init() {
+
+
+				scene = new THREE.Scene();
+				camera = new THREE.PerspectiveCamera(55, window.innerWidth/window.innerHeight, 1, 10000);
+				renderer = new THREE.WebGLRenderer( { antialias: true , alpha: false } );
+				renderer.setSize(window.innerWidth, window.innerHeight);
+				document.body.appendChild(renderer.domElement);
+				
+				// CONTROLS
+				controls = new THREE.OrbitControls( camera );
+				controls.addEventListener( 'change', render );
+
+				// LOAD DEFAULT SCENE
+				loadSimpleScene();
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function loadSimpleScene() {
+
+				renderer.setClearColor(0xeeeeee, 1);
+				scene = new THREE.Scene();
+
+				// LIGHTS
+				var light = new THREE.DirectionalLight( 0xffffff );
+				light.position.set( 3, 2, 1 );
+				scene.add( light );
+				light = new THREE.DirectionalLight( 0x999999 );
+				light.position.set( -2, -3, -1 );
+				scene.add( light );
+				light = new THREE.AmbientLight( 0x222222 );
+				scene.add(light);
+
+				var geometry = new THREE.CubeGeometry(1,1,1);
+				var material =  new THREE.MeshLambertMaterial( { color:0x82CAFF, shading: THREE.FlatShading } );
+				var cube = new THREE.Mesh(geometry, material);
+				scene.add(cube);
+
+				camera.position.set( 2.5, 0.9, 1.4 );
+				camera.lookAt(new THREE.Vector3(0,0,0) );
+
+			}
+
+			function loadCityScene() {
+
+				renderer.setClearColor(0xccddff, 1);
+				renderer.gammaInput = true; renderer.gammaOutput = true; renderer.physicallyBasedShading = true;
+				scene = new THREE.Scene();
+				
+				// LIGHTS
+				var ambientLight = new THREE.AmbientLight( 0x999999 );
+				scene.add(ambientLight);
+				var directionalLight = new THREE.DirectionalLight( 0xffffff, 1.275 );
+				directionalLight.position.set( 3, 2, 1 );
+				scene.add(directionalLight);
+				directionalLight = new THREE.DirectionalLight( 0x222222 );
+				directionalLight.position.set( 3, -2, -1 );
+				scene.add(directionalLight);
+				var hemiLight = new THREE.HemisphereLight( 0xffffff, 0xffffff, 0.5 );
+				hemiLight.color.setHSL( 0.6, 1, 0.6 );
+				hemiLight.groundColor.setHSL( 0.095, 1, 0.75 );
+				hemiLight.position.set( 0, 500, 0 );
+				scene.add( hemiLight );
+
+				// GROUND
+				var initTexture = THREE.ImageUtils.generateDataTexture( 1, 1, new THREE.Color( 0x497f13 ) );
+				var groundMaterial = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0x000000, map: initTexture } );
+				var groundTexture = THREE.ImageUtils.loadTexture( "../three.js/examples/textures/terrain/grasslight-big.jpg", undefined, function() { groundMaterial.map = groundTexture; render(); } );
+				groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping;
+				groundTexture.repeat.set( 250, 250 );
+				groundTexture.anisotropy = 16;
+				var mesh = new THREE.Mesh( new THREE.PlaneGeometry( 2000, 2000 ), groundMaterial );
+				mesh.position.y = 0;
+				mesh.rotation.x = - Math.PI / 2;
+				mesh.receiveShadow = true;
+				scene.add( mesh );
+
+
+				// CITY MODEL
+				var loader = new THREE.OBJMTLLoader();
+				loader.load( "models/streets/AlphaVille_CenterPart.obj", "models/streets/AlphaVille_CenterPart.mtl", function ( object ) { scene.add( object ); render(); } );
+				loader.load( "models/buildings/squareBlock/SquareBlock.obj", "models/buildings/squareBlock/SquareBlock.mtl", function ( object ) {
+					
+					var step = 110;
+
+					for ( var i = 0; i < 6; i++ ) {
+
+						for ( var j = 0; j < 6; j++ ) {
+
+							var objectClone = object.clone();
+							if ( j < 3 ) 
+								objectClone.position = new THREE.Vector3(-285 + j * 110, 0.3, -275 + i * 110);
+							else 
+								objectClone.position = new THREE.Vector3(-265 + j * 110, 0.3, -275 + i * 110);
+							
+							objectClone.rotation.y = Math.floor((Math.random()*4)+1) * Math.PI/2;
+							scene.add( objectClone );
+						
+						}
+
+					}
+
+					render();
+
+				} );
+
+				camera.position.set( 700, 245, 475 );
+				camera.lookAt(new THREE.Vector3(0,0,0) );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				render();
+
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+				controls.update();
+
+			}
+
+			function render() {
+
+				renderer.render( scene, camera );
+
+			}
+
+			// ***************************************************************
+			// Customization of the parametrs of a given interaction technique
+			// ***************************************************************
+
+			$(function() {
+				$('#rotationMinus').click( function( event ) {
+					var temp = $('#rotationSpan').html();
+					if ( temp > 1 ) temp --;
+					$('#rotationSpan').html(temp);
+					controls.rotateSpeed = temp/5;
+				});
+			});
+
+			$(function() {
+				$('#rotationPlus').click( function( event ) {
+					var temp = $('#rotationSpan').html();
+					if ( temp < 9 ) temp ++;
+					$('#rotationSpan').html(temp);
+					controls.rotateSpeed = temp/5;
+				});
+			});
+
+			$(function() {
+				$('#panMinus').click( function( event ) {
+					var temp = $('#panSpan').html();
+					if ( temp > 1 ) temp --;
+					$('#panSpan').html(temp);
+					controls.keyPanSpeed = temp/5 * 7;
+				});
+			});
+
+			$(function() {
+				$('#panPlus').click( function( event ) {
+					var temp = $('#panSpan').html();
+					if ( temp < 9 ) temp ++;
+					$('#panSpan').html(temp);
+					controls.keyPanSpeed = temp/5 * 7;
+				});
+			});
+
+			$(function() {
+				$('#dollyMinus').click( function( event ) {
+					var temp = $('#dollySpan').html();
+					if ( temp > 1 ) temp --;
+					$('#dollySpan').html(temp);
+					controls.zoomSpeed = temp/5;
+				});
+			});
+
+			$(function() {
+				$('#dollyPlus').click( function( event ) {
+					var temp = $('#dollySpan').html();
+					if ( temp < 9 ) temp ++;
+					$('#dollySpan').html(temp);
+					controls.zoomSpeed = temp/5;
+				});
+			});
+
+			$(function() {
+				$('#SimpleScene').click( function( event ) {
+					loadSimpleScene();
+				});
+			});
+
+			$(function() {
+				$('#OutdoorEnvironment').click( function( event ) {
+					loadCityScene();
+				});
+			});
+
+
+		</script>
+
+	</body>
+</html>
