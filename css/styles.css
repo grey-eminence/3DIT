@@ -4,7 +4,7 @@ h1 {color:#bbb; font-size: 28px; margin: 2px; padding: 0; text-align: center;}
 h2 {color:#aaa; font-size: 18px; margin-bottom: 10px;}
 h3 {color:#bbb; font-size: 16px; }
 p {color:#444; font-size: 14px; margin-top: 0;}
-ul {color:#444; font-size: 14px; padding-left: 20px;}
+ul, ol {color:#444; font-size: 14px; padding-left: 20px;}
 li {margin-bottom: 2px;}
 
 a {color:#5092d1; text-decoration:none;}
@@ -30,6 +30,8 @@ input:focus {border: #aaa solid 1px;}
 
 #options, #about, #navigation, #manipulation {padding: 0 5px 0 0; margin: 40px 10px 0 0; position:absolute; overflow-y: auto; height: -webkit-calc(100% - 110px); height: calc(100% - 110px);}
 
+.optionsDiv p {margin: 0 0 5px 0;} 
+
 .pageBox { position:absolute; top:0px; left:0px; right:0px; bottom:0px; min-width:200px;}
 .headerBox { position: absolute; width: 100%; height: 60px; background-color: #f9f9f9; z-index: 7;}
 .footerBox { position:absolute; width:100%; height:26px; background-color: #f9f9f9; bottom:0px; z-index: 7;}
@@ -51,17 +53,17 @@ input:focus {border: #aaa solid 1px;}
 
 .contentBoxLeftHidden { position:absolute; width:50px; height:100%; z-index: 2;}
 .contentBoxLeftHiddenWhite { position:absolute; width:47px; height:100%; background-color:#fff; }
-.contentBoxLeftHiddenContent { padding: 10px;}
+.contentBoxLeftHiddenContent { padding: 0px;}
 .contentBoxLeftHiddenShadow {position:absolute; left: 47px; height:100%; width: 3px; z-index: 5;}
 
-.contentBoxRight { position:absolute; width:300px; height:100%; z-index: 10; right:0px;}
+.contentBoxRight { position:absolute; width:300px; height:100%; z-index: 10; right:0px; margin:0px;}
 .contentBoxRightWhite { position:absolute; width:297px; height:100%; background-color:#fff; right:0px;}
 .contentBoxRightContent { padding: 12px; }
 .contentBoxRightShadow {position:absolute; left: 0px; height:100%; width: 3px; z-index: 11;}
 
-.contentBoxRightHidden { position:absolute; width:50px; height:100%; z-index: 5; right:0px;}
+.contentBoxRightHidden { position:absolute; width:50px; height:100%; z-index: 5; right:0px; margin:0px;}
 .contentBoxRightHiddenWhite { position:absolute; width:47px; height:100%; background-color:#fff; right:0px;}
-.contentBoxRightHiddenContent { padding: 10px; height: 100%;}
+.contentBoxRightHiddenContent { padding: 0px; height: 100%;}
 .contentBoxRightHiddenShadow {position:absolute; left: 0px; height:100%; width: 3px; z-index: 5;}
 
 .contentBoxCenter { position:absolute; width:100%; left:0px; height:100%; background-color: #999; }    
@@ -84,13 +86,17 @@ input:focus {border: #aaa solid 1px;}
 #searchInput { width: 400px; height: 28px; padding: 0 5px; margin: 0 5px; vertical-align: bottom}
 #searchButton { width: 80px; height: 30px; color: #555; padding: 0px; margin: 0px; }
 
-
+#showButtonRight {margin: 10px;}
+#showButton {margin: 10px;}
 
 #stats { position: absolute; top:0; left: 0 }
 #stats #fps { background: transparent !important }
 #stats #fps #fpsText { color: #abc !important }
 #stats #fps #fpsGraph { display: none }
 
+#listOfNavigationTechniques {}
+#listOfNavigationTechniques .selected {text-decoration: underline; color:#3072b1;}
+#viewer {height: 100%; width: 100%; border: 0px;}
 
 #EGaper {}
 #EGPaper a {opacity:0.8;}
@@ -121,9 +127,22 @@ input:focus {border: #aaa solid 1px;}
     position: absolute;
     width: 100%;
     height: 90%;
+    padding: 10px;
 }
 
 .verticallyAligned {
     display: table-cell;
     vertical-align: middle;
+}
+
+.css3D1200x1200 {
+  width: 1200px; height: 1200px; -webkit-backface-visibility: hidden;
+}
+
+.css3D1200x600 {
+  width: 1200px; height: 600px; -webkit-backface-visibility: hidden;
+} 
+
+.css3DiFrame {
+  width: 100%; height: 100%;
 }
