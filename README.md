@@ -7,7 +7,7 @@ This website was created to aid both researchers and developers of interactive 3
 
 * [Online Demonstrator]() - As there is no single interaction method can be considered perfect for any task and any 3D scene, the demonstrator provides a simple classification together with demonstrations of the 3D interaction techniques allowing a designer or a programmer to choose the best compromise for his/her needs.
 
--><img src="https://raw.github.com/grey-eminence/3DIT/master/img/ScreenShot.png" alt="ScreenShot"/><-
+<p align="center"><img src="https://raw.github.com/grey-eminence/3DIT/master/img/ScreenShot.png" alt="ScreenShot"/></p>
 
 * [Content&amp;Tasks]() - Most often, researchers trying to propose a new 3D interaction technique have to spend considerable time not only on its development, but also on authoring new content and tasks for the technique's evaluation. The content&amp;tasks page is intended to list 3D environments that can be easly employed in testing different interaction techniques. The environments are also accompanied by the tasks that can be reused by evaluators.
 * [Studies&amp;Results]() - This section lists the 3DUI related publications together with the information about used environments, implementations, tasks, and results, the information that can be helpful not only to replicate the research (replicability is the foundation of research in many dysciplines of science), but also to lower the barier for the development of new interaction techniques.
