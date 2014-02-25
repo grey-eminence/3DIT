@@ -198,7 +198,7 @@
 				// GROUND
 				var initTexture = THREE.ImageUtils.generateDataTexture( 1, 1, new THREE.Color( 0x497f13 ) );
 				var groundMaterial = new THREE.MeshPhongMaterial( { color: 0xffffff, specular: 0x000000, map: initTexture } );
-				var groundTexture = THREE.ImageUtils.loadTexture( "../three.js/examples/textures/terrain/grasslight-big.jpg", undefined, function() { groundMaterial.map = groundTexture; render(); } );
+				var groundTexture = THREE.ImageUtils.loadTexture( "textures/grass.jpg", undefined, function() { groundMaterial.map = groundTexture; render(); } );
 				groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping;
 				groundTexture.repeat.set( 250, 250 );
 				groundTexture.anisotropy = 16;
