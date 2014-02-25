@@ -1,0 +1,703 @@
+<osm>
+<path id="1">
+<nd ref="138"/>
+<nd ref="4"/>
+<nd ref="8"/>
+<nd ref="13"/>
+<nd ref="19"/>
+<nd ref="18"/>
+<nd ref="17"/>
+<nd ref="16"/>
+<nd ref="131"/>
+<nd ref="127"/>
+<nd ref="126"/>
+<nd ref="125"/>
+<nd ref="124"/>
+<nd ref="117"/>
+<nd ref="110"/>
+<nd ref="103"/>
+<nd ref="89"/>
+<nd ref="96"/>
+<nd ref="97"/>
+<nd ref="98"/>
+<nd ref="99"/>
+<nd ref="132"/>
+<nd ref="53"/>
+<nd ref="60"/>
+<nd ref="66"/>
+<nd ref="71"/>
+<car id="0" px="-1077.822" py="2" pz="-148.3443" ox="0" oy="300" oz="0"/>
+<car id="1" px="-841.0413" py="2" pz="5.112793" ox="0" oy="0" oz="0"/>
+<car id="2" px="-47.4222" py="2" pz="324.7391" ox="0" oy="0" oz="0"/>
+<car id="3" px="466.0757" py="2" pz="6.315895" ox="0" oy="180" oz="0"/>
+<car id="4" px="729.8136" py="2" pz="143.9348" ox="0" oy="300" oz="0"/>
+<tag name="Easy path 01"/>
+</path>
+<path id="2">
+<nd ref="531"/>
+<nd ref="526"/>
+<nd ref="517"/>
+<nd ref="508"/>
+<nd ref="467"/>
+<nd ref="466"/>
+<nd ref="465"/>
+<nd ref="464"/>
+<nd ref="463"/>
+<nd ref="462"/>
+<nd ref="461"/>
+<nd ref="460"/>
+<nd ref="459"/>
+<nd ref="458"/>
+<nd ref="457"/>
+<nd ref="496"/>
+<nd ref="495"/>
+<nd ref="494"/>
+<nd ref="493"/>
+<nd ref="492"/>
+<nd ref="491"/>
+<nd ref="490"/>
+<nd ref="489"/>
+<nd ref="488"/>
+<nd ref="487"/>
+<nd ref="428"/>
+<nd ref="427"/>
+<nd ref="426"/>
+<nd ref="425"/>
+<nd ref="424"/>
+<nd ref="423"/>
+<nd ref="422"/>
+<nd ref="103"/>
+<nd ref="110"/>
+<nd ref="117"/>
+<nd ref="124"/>
+<nd ref="125"/>
+<nd ref="126"/>
+<nd ref="127"/>
+<nd ref="131"/>
+<car id="0" px="-47.4222" py="2" pz="324.7391" ox="0" oy="0" oz="0"/>
+<car id="1" px="-346.2837" py="2" pz="249.366" ox="0" oy="90" oz="0"/>
+<car id="2" px="58.05545" py="2" pz="661.1954" ox="0" oy="300" oz="0"/>
+<car id="3" px="-165.0266" py="2" pz="949.4056" ox="0" oy="30" oz="0"/>
+<car id="4" px="-456.3693" py="2" pz="-6.213539" ox="0" oy="0" oz="0"/>
+<tag name="Easy path 02"/>
+</path>
+<path id="3">
+<nd ref="127"/>
+<nd ref="128"/>
+<nd ref="129"/>
+<nd ref="130"/>
+<nd ref="123"/>
+<nd ref="116"/>
+<nd ref="109"/>
+<nd ref="108"/>
+<nd ref="107"/>
+<nd ref="106"/>
+<nd ref="105"/>
+<nd ref="104"/>
+<nd ref="103"/>
+<nd ref="82"/>
+<nd ref="89"/>
+<nd ref="90"/>
+<nd ref="91"/>
+<nd ref="98"/>
+<nd ref="99"/>
+<car id="0" px="-144.6418" py="2" pz="-335.536" ox="0" oy="0" oz="0"/>
+<car id="1" px="10.09451" py="2" pz="-257.1044" ox="0" oy="270" oz="0"/>
+<car id="2" px="-12.09405" py="2" pz="247.8178" ox="0" oy="90" oz="0"/>
+<car id="3" px="299.7191" py="2" pz="104.935" ox="0" oy="0" oz="0"/>
+<car id="4" px="-347.1483" py="2" pz="-86.93474" ox="0" oy="90" oz="0"/>
+<tag name="Easy path 03"/>
+</path>
+<path id="4">
+<nd ref="22"/>
+<nd ref="15"/>
+<nd ref="9"/>
+<nd ref="4"/>
+<nd ref="138"/>
+<nd ref="170"/>
+<nd ref="169"/>
+<nd ref="167"/>
+<nd ref="136"/>
+<nd ref="165"/>
+<nd ref="134"/>
+<nd ref="166"/>
+<nd ref="168"/>
+<nd ref="171"/>
+<nd ref="140"/>
+<nd ref="1"/>
+<nd ref="5"/>
+<nd ref="10"/>
+<nd ref="16"/>
+<nd ref="131"/>
+<nd ref="127"/>
+<nd ref="120"/>
+<nd ref="113"/>
+<nd ref="106"/>
+<nd ref="105"/>
+<nd ref="104"/>
+<nd ref="103"/>
+<car id="0" px="-1289.139" py="2" pz="-135.584" ox="0" oy="60" oz="0"/>
+<car id="1" px="-803.5356" py="2" pz="-328.0874" ox="0" oy="60" oz="0"/>
+<car id="2" px="-515.5457" py="2" pz="-5.569283" ox="0" oy="0" oz="0"/>
+<car id="3" px="-72.17343" py="2" pz="-5.812744" ox="0" oy="0" oz="0"/>
+<car id="4" px="-12.09405" py="2" pz="176.7849" ox="0" oy="90" oz="0"/>
+<tag name="Easy path 04"/>
+</path>
+<path id="5">
+<nd ref="4"/>
+<nd ref="3"/>
+<nd ref="7"/>
+<nd ref="12"/>
+<nd ref="11"/>
+<nd ref="10"/>
+<nd ref="16"/>
+<nd ref="131"/>
+<nd ref="127"/>
+<nd ref="120"/>
+<nd ref="119"/>
+<nd ref="118"/>
+<nd ref="111"/>
+<nd ref="110"/>
+<nd ref="103"/>
+<nd ref="423"/>
+<nd ref="424"/>
+<nd ref="425"/>
+<nd ref="426"/>
+<nd ref="427"/>
+<nd ref="428"/>
+<nd ref="487"/>
+<nd ref="488"/>
+<nd ref="489"/>
+<nd ref="490"/>
+<nd ref="491"/>
+<nd ref="492"/>
+<nd ref="493"/>
+<nd ref="494"/>
+<nd ref="495"/>
+<nd ref="496"/>
+<nd ref="457"/>
+<nd ref="458"/>
+<nd ref="459"/>
+<nd ref="460"/>
+<nd ref="461"/>
+<nd ref="462"/>
+<nd ref="463"/>
+<nd ref="464"/>
+<nd ref="465"/>
+<nd ref="466"/>
+<nd ref="467"/>
+<nd ref="508"/>
+<nd ref="517"/>
+<nd ref="526"/>
+<car id="0" px="-1099.139" py="2" pz="-317.4684" ox="0" oy="0" oz="0"/>
+<car id="1" px="-675.7505" py="2" pz="-48.84202" ox="0" oy="300" oz="0"/>
+<car id="2" px="-70.36148" py="2" pz="327.8236" ox="0" oy="0" oz="0"/>
+<car id="3" px="-282.076" py="2" pz="-5.921343" ox="0" oy="0" oz="0"/>
+<car id="4" px="-861.8175" py="2" pz="-96.64854" ox="0" oy="180" oz="0"/>
+<tag name="Medium path 01"/>
+<!--<balloon id="0" x="-1064.281" y="0" z="-303.3706"/>
+<balloon id="1" x="-974.5942" y="0" z="-172.6473"/>
+<balloon id="2" x="-954.0714" y="0" z="-104.2935"/>
+<balloon id="3" x="-813.0961" y="0" z="-115.4037"/>
+<balloon id="4" x="-714.8163" y="0" z="-96.60693"/>
+<balloon id="5" x="-339.7648" y="0" z="9.34021"/>
+<balloon id="6" x="-117.243" y="0" z="285.439"/>
+<balloon id="7" x="89.54932" y="0" z="822.4023"/>
+<balloon id="8" x="23.88428" y="0" z="893.8215"/>
+<balloon id="9" x="-239.303" y="0" z="1012.586"/>-->
+</path>
+<path id="6">
+<nd ref="68"/>
+<nd ref="62"/>
+<nd ref="61"/>
+<nd ref="60"/>
+<nd ref="53"/>
+<nd ref="132"/>
+<nd ref="99"/>
+<nd ref="92"/>
+<nd ref="93"/>
+<nd ref="94"/>
+<nd ref="87"/>
+<nd ref="88"/>
+<nd ref="109"/>
+<nd ref="400"/>
+<nd ref="401"/>
+<nd ref="402"/>
+<nd ref="403"/>
+<nd ref="404"/>
+<nd ref="405"/>
+<nd ref="406"/>
+<nd ref="389"/>
+<nd ref="197"/>
+<nd ref="236"/>
+<nd ref="235"/>
+<nd ref="234"/>
+<nd ref="233"/>
+<nd ref="232"/>
+<nd ref="231"/>
+<nd ref="230"/>
+<nd ref="229"/>
+<nd ref="228"/>
+<nd ref="227"/>
+<nd ref="371"/>
+<nd ref="370"/>
+<nd ref="369"/>
+<nd ref="368"/>
+<nd ref="367"/>
+<nd ref="366"/>
+<nd ref="365"/>
+<nd ref="364"/>
+<nd ref="363"/>
+<nd ref="362"/>
+<nd ref="361"/>
+<nd ref="317"/>
+<car id="0" px="543.7737" py="2" pz="5.955574" ox="0" oy="0" oz="0"/>
+<car id="1" px="-9.34465" py="2" pz="-455.7566" ox="0" oy="90" oz="0"/>
+<car id="2" px="886.597" py="2" pz="107.8912" ox="0" oy="0" oz="0"/>
+<car id="3" px="-0.357502" py="2" pz="-1137.226" ox="0" oy="30" oz="0"/>
+<car id="4" px="234.6313" py="2" pz="-159.9308" ox="0" oy="90" oz="0"/>
+<tag name="Medium path 02"/>
+<!--<balloon id="0" x="230.6714" y="0" z="-227.0706"/>
+<balloon id="1" x="143.0242" y="0" z="-221.1425"/>
+<balloon id="2" x="83.82227" y="0" z="-340.7698"/>
+<balloon id="3" x="-10.94958" y="0" z="-445.0051"/>
+<balloon id="4" x="-52.36719" y="0" z="-897.1759"/>
+<balloon id="5" x="-28.68091" y="0" z="-995.4829"/>
+<balloon id="6" x="-4.900146" y="0" z="-595.0416"/>
+<balloon id="7" x="610.9907" y="1" z="4.792603"/>
+<balloon id="8" x="831.4253" y="5" z="96.00952"/>
+<balloon id="9" x="949.7847" y="2" z="129.6733"/>-->
+</path>
+<path id="7">
+<nd ref="41"/>
+<nd ref="40"/>
+<nd ref="44"/>
+<nd ref="50"/>
+<nd ref="57"/>
+<nd ref="63"/>
+<nd ref="62"/>
+<nd ref="61"/>
+<nd ref="60"/>
+<nd ref="53"/>
+<nd ref="132"/>
+<nd ref="99"/>
+<nd ref="92"/>
+<nd ref="85"/>
+<nd ref="84"/>
+<nd ref="83"/>
+<nd ref="104"/>
+<nd ref="111"/>
+<nd ref="118"/>
+<nd ref="119"/>
+<nd ref="120"/>
+<nd ref="113"/>
+<nd ref="114"/>
+<car id="0" px="1017.541" py="2" pz="-250.9045" ox="0" oy="60" oz="0"/>
+<car id="1" px="1088.907" py="2" pz="67.5395" ox="0" oy="60" oz="0"/>
+<car id="2" px="-126.0162" py="2" pz="-40.10889" ox="0" oy="90" oz="0"/>
+<car id="3" px="667.8613" py="2" pz="61.75812" ox="0" oy="120" oz="0"/>
+<car id="4" px="114.3957" py="2" pz="64.47459" ox="0" oy="90" oz="0"/>
+<tag name="Medium path 03"/>
+<!--<balloon id="0" x="1051.86" y="3" z="-313.3838"/>
+<balloon id="1" x="1031.254" y="2" z="-143.9807"/>
+<balloon id="2" x="1084.453" y="4" z="51.48755"/>
+<balloon id="3" x="911.7722" y="1" z="97.09912"/>
+<balloon id="4" x="642.4849" y="7" z="-6.065674"/>
+<balloon id="5" x="363.3831" y="2" z="8.05188"/>
+<balloon id="6" x="112.5532" y="8" z="-4.979126"/>
+<balloon id="7" x="-0.3862305" y="3" z="211.1218"/>
+<balloon id="8" x="-209.9565" y="5" z="216.5481"/>
+<balloon id="9" x="-157.8569" y="6" z="-1.7229"/>-->
+</path>
+<path id="8">
+<nd ref="37"/>
+<nd ref="32"/>
+<nd ref="31"/>
+<nd ref="30"/>
+<nd ref="34"/>
+<nd ref="142"/>
+<nd ref="158"/>
+<nd ref="155"/>
+<nd ref="145"/>
+<nd ref="154"/>
+<nd ref="156"/>
+<nd ref="153"/>
+<nd ref="152"/>
+<nd ref="149"/>
+<nd ref="151"/>
+<nd ref="157"/>
+<nd ref="131"/>
+<nd ref="127"/>
+<nd ref="128"/>
+<nd ref="121"/>
+<nd ref="114"/>
+<nd ref="115"/>
+<nd ref="116"/>
+<nd ref="109"/>
+<nd ref="400"/>
+<nd ref="401"/>
+<nd ref="402"/>
+<nd ref="403"/>
+<nd ref="404"/>
+<nd ref="405"/>
+<nd ref="406"/>
+<nd ref="389"/>
+<nd ref="197"/>
+<nd ref="198"/>
+<nd ref="199"/>
+<nd ref="200"/>
+<nd ref="201"/>
+<nd ref="202"/>
+<nd ref="203"/>
+<nd ref="204"/>
+<nd ref="205"/>
+<nd ref="206"/>
+<nd ref="207"/>
+<nd ref="375"/>
+<car id="0" px="-64.89445" py="2" pz="-816.2963" ox="0" oy="30" oz="0"/>
+<car id="1" px="-166.6523" py="2" pz="-115.0223" ox="0" oy="0" oz="0"/>
+<car id="2" px="-486.3546" py="2" pz="7.478546" ox="0" oy="0" oz="0"/>
+<car id="3" px="-916.6631" py="2" pz="202.6223" ox="0" oy="0" oz="0"/>
+<car id="4" px="-1134.926" py="2" pz="244.8777" ox="0" oy="60" oz="0"/>
+<tag name="Medium path 04"/>
+<!--<balloon id="0" x="-1117.351" y="3" z="214.7166"/>
+<balloon id="1" x="-921.8926" y="2" z="201.6794"/>
+<balloon id="2" x="-793.7188" y="6" z="371.0884"/>
+<balloon id="3" x="-599.334" y="3" z="147.3823"/>
+<balloon id="4" x="-408.2206" y="8" z="-6.81665"/>
+<balloon id="5" x="-339.8124" y="1" z="-120.8367"/>
+<balloon id="6" x="-103.8568" y="2" z="-338.0188"/>
+<balloon id="7" x="-57.15271" y="3" z="-696.3093"/>
+<balloon id="8" x="-63.67126" y="1" z="-816.866"/>
+<balloon id="9" x="66.62671" y="3" z="-829.9031"/>-->
+</path>
+<path id="9">
+<nd ref="128"/>
+<nd ref="129"/>
+<nd ref="130"/>
+<nd ref="123"/>
+<nd ref="122"/>
+<nd ref="115"/>
+<nd ref="116"/>
+<nd ref="109"/>
+<nd ref="108"/>
+<nd ref="107"/>
+<nd ref="114"/>
+<nd ref="113"/>
+<nd ref="106"/>
+<nd ref="105"/>
+<nd ref="84"/>
+<nd ref="83"/>
+<nd ref="90"/>
+<nd ref="91"/>
+<nd ref="98"/>
+<nd ref="99"/>
+<nd ref="132"/>
+<nd ref="53"/>
+<balloon id="0" x="-348.4991" y="7" z="-225.5891"/>
+<balloon id="1" x="-321.3408" y="4" z="-337.4349"/>
+<balloon id="2" x="-225.7941" y="3" z="-300.5183"/>
+<balloon id="3" x="-230.1396" y="6" z="-204.9569"/>
+<balloon id="4" x="-122.6201" y="2" z="-237.5344"/>
+<balloon id="5" x="-86.78052" y="2" z="-327.6667"/>
+<balloon id="6" x="9.850586" y="4" z="-100.7075"/>
+<balloon id="7" x="-130.2131" y="3" z="0.2836914"/>
+<balloon id="8" x="-8.606689" y="4" z="119.7356"/>
+<balloon id="9" x="96.73999" y="2" z="107.79"/>
+<balloon id="10" x="227.0378" y="1" z="193.5789"/>
+<balloon id="11" x="234.655" y="3" z="130.5952"/>
+<balloon id="12" x="348.6687" y="6" z="80.6416"/>
+<balloon id="13" x="374.735" y="12" z="-9.754147"/>
+<balloon id="14" x="615.8076" y="2" z="-8.403931"/>
+<car id="0" px="525.3045" py="2" pz="-6.813278" ox="0" oy="0" oz="0"/>
+<car id="1" px="-9.261452" py="2" pz="47.86543" ox="0" oy="90" oz="0"/>
+<car id="2" px="346.7849" py="2" pz="40.50925" ox="0" oy="90" oz="0"/>
+<car id="3" px="-334.3556" py="2" pz="-196.3045" ox="0" oy="90" oz="0"/>
+<car id="4" px="10.21673" py="2" pz="-243.498" ox="0" oy="270" oz="0"/>
+<tag name="Hard path 01"/>
+</path>
+<path id="10">
+<nd ref="26"/>
+<nd ref="25"/>
+<nd ref="31"/>
+<nd ref="30"/>
+<nd ref="35"/>
+<nd ref="34"/>
+<nd ref="29"/>
+<nd ref="24"/>
+<nd ref="17"/>
+<nd ref="16"/>
+<nd ref="131"/>
+<nd ref="127"/>
+<nd ref="126"/>
+<nd ref="119"/>
+<nd ref="118"/>
+<nd ref="117"/>
+<nd ref="110"/>
+<nd ref="111"/>
+<nd ref="104"/>
+<nd ref="83"/>
+<nd ref="90"/>
+<nd ref="91"/>
+<nd ref="84"/>
+<nd ref="85"/>
+<balloon id="0" x="-951.9888" y="9" z="113.094"/>
+<balloon id="1" x="-895.7292" y="4" z="242.446"/>
+<balloon id="2" x="-817.5066" y="3" z="319.5461"/>
+<balloon id="3" x="-776.2957" y="2" z="190.3213"/>
+<balloon id="4" x="-724.1472" y="2" z="3.541382"/>
+<balloon id="5" x="-488.5031" y="5" z="-8.277008"/>
+<balloon id="6" x="-346.2175" y="5" z="30.68982"/>
+<balloon id="7" x="-223.5125" y="4" z="219.6409"/>
+<balloon id="8" x="-137.7216" y="2" z="324.9753"/>
+<balloon id="9" x="-9.59668" y="7" z="213.1252"/>
+<balloon id="10" x="118.629" y="3" z="228.2245"/>
+<balloon id="11" x="207.5422" y="5" z="223.9849"/>
+<balloon id="12" x="235.814" y="3" z="176.2039"/>
+<balloon id="13" x="213.011" y="9" z="106.7046"/>
+<balloon id="14" x="108.7632" y="2" z="108.876"/>
+<car id="0" px="62.0923" py="2" pz="214.1363" ox="0" oy="0" oz="0"/>
+<car id="1" px="-1002.478" py="2" pz="96.37466" ox="0" oy="0" oz="0"/>
+<car id="2" px="-385.6207" py="2" pz="7.583673" ox="0" oy="0" oz="0"/>
+<car id="3" px="113.5973" py="2" pz="60.15926" ox="0" oy="90" oz="0"/>
+<car id="4" px="-678.6472" py="2" pz="-9.485542" ox="0" oy="180" oz="0"/>
+<tag name="Hard path 02"/>
+</path>
+<path id="11">
+<nd ref="317"/>
+<nd ref="361"/>
+<nd ref="362"/>
+<nd ref="363"/>
+<nd ref="364"/>
+<nd ref="365"/>
+<nd ref="366"/>
+<nd ref="367"/>
+<nd ref="368"/>
+<nd ref="369"/>
+<nd ref="370"/>
+<nd ref="371"/>
+<nd ref="227"/>
+<nd ref="228"/>
+<nd ref="229"/>
+<nd ref="230"/>
+<nd ref="231"/>
+<nd ref="232"/>
+<nd ref="233"/>
+<nd ref="234"/>
+<nd ref="235"/>
+<nd ref="236"/>
+<nd ref="197"/>
+<nd ref="389"/>
+<nd ref="406"/>
+<nd ref="405"/>
+<nd ref="404"/>
+<nd ref="403"/>
+<nd ref="402"/>
+<nd ref="401"/>
+<nd ref="400"/>
+<nd ref="109"/>
+<nd ref="88"/>
+<nd ref="87"/>
+<nd ref="94"/>
+<nd ref="93"/>
+<nd ref="100"/>
+<nd ref="99"/>
+<nd ref="92"/>
+<nd ref="85"/>
+<nd ref="106"/>
+<nd ref="105"/>
+<nd ref="84"/>
+<nd ref="91"/>
+<nd ref="90"/>
+<nd ref="83"/>
+<nd ref="82"/>
+<nd ref="103"/>
+<nd ref="422"/>
+<nd ref="423"/>
+<nd ref="424"/>
+<nd ref="425"/>
+<nd ref="426"/>
+<nd ref="427"/>
+<nd ref="428"/>
+<balloon id="4" x="9.848999" y="2" z="-1117.359"/>
+<balloon id="5" x="-54.22595" y="2" z="-991.3831"/>
+<balloon id="6" x="-35.76868" y="3" z="-820.8263"/>
+<balloon id="7" x="-79.2135" y="4" z="-693.7758"/>
+<balloon id="8" x="8.768677" y="2" z="-337.5797"/>
+<balloon id="9" x="130.3933" y="5" z="-329.9808"/>
+<balloon id="10" x="157.5479" y="7" z="-217.0414"/>
+<balloon id="11" x="233.5549" y="2" z="-201.8375"/>
+<balloon id="12" x="223.7893" y="3" z="-107.3673"/>
+<balloon id="13" x="322.5994" y="6" z="-4.199585"/>
+<balloon id="14" x="118.4485" y="3" z="7.744995"/>
+<balloon id="15" x="-7.515625" y="5" z="115.2524"/>
+<balloon id="16" x="230.2954" y="8" z="228.1858"/>
+<balloon id="17" x="129.2918" y="2" z="332.4258"/>
+<balloon id="18" x="5.936439" y="4" z="321.4092"/>
+<car id="0" px="74.46088" py="2" pz="690.9221" ox="0" oy="120" oz="0"/>
+<car id="1" px="154.6558" py="2" pz="114.1914" ox="0" oy="0" oz="0"/>
+<car id="2" px="-11.52783" py="2" pz="423.9279" ox="0" oy="90" oz="0"/>
+<car id="3" px="-53.56752" py="2" pz="-694.7871" ox="0" oy="300" oz="0"/>
+<car id="4" px="163.6222" py="2" pz="-6.14881" ox="0" oy="180" oz="0"/>
+<tag name="Hard path 03"/>
+</path>
+<path id="12">
+<nd ref="104"/>
+<nd ref="83"/>
+<nd ref="90"/>
+<nd ref="91"/>
+<nd ref="98"/>
+<nd ref="97"/>
+<nd ref="96"/>
+<nd ref="89"/>
+<nd ref="82"/>
+<nd ref="103"/>
+<nd ref="110"/>
+<nd ref="111"/>
+<nd ref="118"/>
+<nd ref="119"/>
+<nd ref="126"/>
+<nd ref="127"/>
+<nd ref="131"/>
+<nd ref="16"/>
+<nd ref="17"/>
+<nd ref="11"/>
+<nd ref="12"/>
+<nd ref="19"/>
+<nd ref="20"/>
+<nd ref="26"/>
+<nd ref="31"/>
+<nd ref="36"/>
+<nd ref="37"/>
+<balloon id="0" x="9.479614" y="4" z="237.1428"/>
+<balloon id="1" x="229.9141" y="5" z="229.5425"/>
+<balloon id="2" x="345.0266" y="6" z="334.877"/>
+<balloon id="3" x="-116.4971" y="2" z="317.5017"/>
+<balloon id="4" x="116.4305" y="4" z="323.6884"/>
+<balloon id="5" x="-230.5106" y="2" z="229.5427"/>
+<balloon id="6" x="-273.9434" y="3" z="106.8313"/>
+<balloon id="7" x="-372.7715" y="4" z="-7.190063"/>
+<balloon id="8" x="-625.7332" y="10" z="13.56763"/>
+<balloon id="9" x="-757.183" y="5" z="-7.190063"/>
+<balloon id="10" x="-897.2711" y="2" z="-109.2683"/>
+<balloon id="11" x="-988.3393" y="7" z="-4.168121"/>
+<balloon id="12" x="-1105.204" y="3" z="-3.932251"/>
+<balloon id="13" x="-1065.018" y="2" z="109.0027"/>
+<balloon id="14" x="-1054.178" y="5" z="309.9011"/>
+<car id="0" px="-450.1755" py="2" pz="-5.55751" ox="0" oy="180" oz="0"/>
+<car id="1" px="97.95699" py="2" pz="215.8154" ox="0" oy="0" oz="0"/>
+<car id="2" px="-700.3013" py="2" pz="7.052567" ox="0" oy="0" oz="0"/>
+<car id="3" px="-1117.913" py="2" pz="304.1721" ox="0" oy="0" oz="0"/>
+<car id="4" px="346.704" py="2" pz="216.0428" ox="0" oy="90" oz="0"/>
+<tag k="name" v="Hard path 04"/>
+</path>
+<path id="13">
+<nd ref="130"/>
+<nd ref="123"/>
+<nd ref="116"/>
+<nd ref="115"/>
+<nd ref="114"/>
+<nd ref="86"/>
+<nd ref="93"/>
+<nd ref="100"/>
+<nd ref="99"/>
+<nd ref="98"/>
+<nd ref="91"/>
+<nd ref="84"/>
+<nd ref="83"/>
+<nd ref="82"/>
+<balloon id="0" x="-154.639" y="7" z="-335.1411"/>
+<balloon id="1" x="-116.6354" y="2" z="-137.5031"/>
+<balloon id="2" x="9.335083" y="6" z="-102.7528"/>
+<balloon id="3" x="339.4558" y="3" z="-116.8687"/>
+<balloon id="4" x="109.2405" y="4" z="109.0027"/>
+<car id="0" px="126.4015" py="2" pz="274.6116" ox="0" oy="90" oz="0"/>
+<car id="1" px="243.8588" py="2" pz="103.749" ox="0" oy="0" oz="0"/>
+<car id="2" px="278.6581" py="2" pz="-115.0094" ox="0" oy="0" oz="0"/>
+<car id="3" px="-57.75459" py="2" pz="-114.9113" ox="0" oy="0" oz="0"/>
+<car id="4" px="-258.7546" py="2" pz="-334.2625" ox="0" oy="0" oz="0"/>
+<tag k="name" v="Training path 01"/>
+</path>
+<path id="14">
+<nd ref="124"/>
+<nd ref="117"/>
+<nd ref="110"/>
+<nd ref="111"/>
+<nd ref="104"/>
+<nd ref="105"/>
+<nd ref="106"/>
+<nd ref="107"/>
+<nd ref="114"/>
+<nd ref="121"/>
+<nd ref="128"/>
+<nd ref="129"/>
+<nd ref="130"/>
+<nd ref="123"/>
+<nd ref="116"/>
+<nd ref="109"/>
+<balloon id="0" x="-120.9783" y="6" z="-322.1085"/>
+<balloon id="1" x="-346.8478" y="2" z="-313.4218"/>
+<balloon id="2" x="-258.89" y="7" z="-113.6124"/>
+<balloon id="3" x="9.335083" y="6" z="2.583252"/>
+<balloon id="4" x="-125.3207" y="3" z="217.5964"/>
+<car id="0" px="-9.614218" py="2" pz="47.38903" ox="0" oy="90" oz="0"/>
+<car id="1" px="-74.21481" py="2" pz="214.8421" ox="0" oy="0" oz="0"/>
+<car id="2" px="-197.4984" py="2" pz="324.6681" ox="0" oy="0" oz="0"/>
+<car id="3" px="-308.7024" py="2" pz="-104.0741" ox="0" oy="0" oz="0"/>
+<car id="4" px="-174.487" py="2" pz="-336.3485" ox="0" oy="0" oz="0"/>
+<tag k="name" v="Training path 02"/>
+</path>
+<path id="15">
+<nd ref="118"/>
+<nd ref="111"/>
+<nd ref="83"/>
+<nd ref="90"/>
+<nd ref="91"/>
+<nd ref="84"/>
+<nd ref="85"/>
+<nd ref="92"/>
+<nd ref="93"/>
+<nd ref="86"/>
+<nd ref="107"/>
+<nd ref="114"/>
+<nd ref="121"/>
+<nd ref="128"/>
+<nd ref="129"/>
+<nd ref="130"/>
+<balloon id="0" x="-102.515" y="2" z="215.4236"/>
+<balloon id="1" x="120.1018" y="8" z="227.3696"/>
+<balloon id="2" x="115.7559" y="2" z="115.5181"/>
+<balloon id="3" x="229.7788" y="4" z="-119.0415"/>
+<balloon id="4" x="-347.9374" y="5" z="-102.7528"/>
+<car id="0" px="-63.01066" py="2" pz="-113.1596" ox="0" oy="0" oz="0"/>
+<car id="1" px="187.775" py="2" pz="105.6172" ox="0" oy="0" oz="0"/>
+<car id="2" px="-61.09509" py="2" pz="224.9032" ox="0" oy="180" oz="0"/>
+<car id="3" px="-345.8785" py="2" pz="-189.7677" ox="0" oy="90" oz="0"/>
+<car id="4" px="150.0659" py="2" pz="-4.281546" ox="0" oy="0" oz="0"/>
+<tag k="name" v="Training path 03"/>
+</path>
+<path id="16">
+<nd ref="116"/>
+<nd ref="115"/>
+<nd ref="114"/>
+<nd ref="107"/>
+<nd ref="106"/>
+<nd ref="113"/>
+<nd ref="120"/>
+<nd ref="119"/>
+<nd ref="126"/>
+<nd ref="125"/>
+<nd ref="124"/>
+<balloon id="0" x="-346.8478" y="7" z="180.6748"/>
+<balloon id="1" x="-226.3126" y="2" z="-2.847412"/>
+<balloon id="2" x="2.81958" y="6" z="9.098633"/>
+<balloon id="3" x="-126.4071" y="4" z="-110.3533"/>
+<balloon id="4" x="-113.3761" y="2" z="-218.9469"/>
+<car id="0" px="-116.4419" py="2" pz="-274.0474" ox="0" oy="270" oz="0"/>
+<car id="1" px="-346.4005" py="2" pz="221.2238" ox="0" oy="90" oz="0"/>
+<car id="2" px="-234.954" py="2" pz="74.19059" ox="0" oy="90" oz="0"/>
+<car id="3" px="-9.804766" py="2" pz="-55.70022" ox="0" oy="90" oz="0"/>
+<car id="4" px="-151.3536" py="2" pz="-4.462625" ox="0" oy="0" oz="0"/>
+<tag k="name" v="Training path 04"/>
+</path>
+</osm>

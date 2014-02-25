@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3DIT - Content</title>
+		<meta charset="utf-8">
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="img/BoxSmall.ico">
+	</head>
+
+	<body>
+
+		<div class="shadowH_Top">
+			<div class="shadowH1"></div><div class="shadowH2"></div><div class="shadowH3"></div>
+		</div>
+
+		<div class="shadowH_Bottom">
+			<div class="shadowH3"></div><div class="shadowH2"></div><div class="shadowH1"></div>
+		</div>
+
+	    <div class="pageBox">
+	        <div class="headerBox">
+	        	<img src="img/Logo3DIT.png" style="float: left; margin: 0px 20px 0px 10px;"/>
+
+				<h1 id="logo">3D Interaction Testbed</h1>
+
+				<div id="navigationPanel">
+					<a href="index.html">home</a> <span class="navSpan">|</span> <a href="testbed.html#Navigation_Rotate-Pan-Dolly">online demonstrator</a> <span class="navSpan">|</span> <a href="content.html">content&amp;tasks</a> <span class="navSpan">|</span> <a href="studies.html">studies&amp;results</a> <span class="navSpan">|</span> <a href="research.html">related research</a>
+				</div>
+	        </div>
+	        <div class="contentBoxM">
+
+	            <div  class="contentBoxMain">
+
+	            	<div style="width: 100%; height:100%; display:table;">
+						    <div class="shadowV" style="opacity: 0.05;"></div>
+							<div class="shadowV" style="opacity: 0.10;"></div>
+							<div class="shadowV" style="opacity: 0.15;"></div>
+						    <div class="contentBoxMainContent">
+						    	<div style="margin: 10px; height: 100%;">
+
+						    		<p>One problem with the research work on 3D interaction is that there are no clearly defined evaluation methods, stimuli as well as representative tasks akin to those found in other dysciplines of science. Most often, researchers trying to propose a new 3D interaction technique have to spend considerable time not only on its development, but also on authoring new content and tasks for the technique's evaluation.
+						    		This page is intended to list 3D environments that can be easly employed in testing different interaction techniques. The environments are accompanied by the tasks that can be reused by evaluators.</p>
+
+						    		<ul>
+						    			<li><a href="#AlphaVille">AlphaVille</a> - Example of 3D Outdoor Environment</li>
+						    			<li><a href="#IndoorEnv">ToDo</a> - Example of 3D Indoor Environment</li>
+						    			<li><a href="#InfoVisEnv">ToDo</a> - Example of 3D Information Visualisation Environment</li>
+						    		</ul>
+
+									<h2 id="AlphaVille">AlphaVille - Example of 3D Outdoor Environment</h2>
+									<p>AlphaVille is a small (about 10km2) virtual 3D city created to represent the most common real-world street layouts (see Figure 1 below). The model of the city is very simple - it consists of five parts: Center, East, West, North and South for the streets network and a number of blocks and houses (see images below). All of these low-poly models are availbe in OBJ, FBX and MAX file formats and are availbe for free as part of the <a href="https://github.com/grey-eminence/3DCityBB">3D City Building Blocks project</a> that aims to provide an easy to use set of resources for the creation of simple 3D city environments. The center part of the city is used on this site in our WebGL+three.js <a href="testbed.html">online testbed</a> implementation; AlphaVille was also used in the <a href="">Unity3D project</a> created for <a href="studies.html#3DUI2014">the evaluation of street-level navigation</a>.</p>
+									<!-- <ul>
+										<li>Streets network that cansists of five parts </li>
+										<li>Blocks and houses </li>
+									</ul> -->
+
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/CityParts/Screenshots/CenterPart.jpg" width="100px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/CityParts/Screenshots/EastPart.jpg" width="100px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/CityParts/Screenshots/WestPart.jpg" width="100px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/CityParts/Screenshots/SouthPart.jpg" width="100px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/CityParts/Screenshots/NorthPart.jpg" width="100px"/> &#32;									
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/House-Blue.jpg" width="100px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/LongHouse.jpg" width="100px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/TriangleBlock.jpg" width="100px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/SquareBlock.jpg" width="100px"/> &#32;
+
+									<br><br>
+
+									<h3>Street-level navigation tasks</h3>
+
+									<p>This section describes the tasks representing various conditions a user is likely to experience using a 3D map application while being in the street level. The tasks are based on the work of Bowman et al. [1].</p>
+
+									<p>Specifically for these tasks the layout of the streets was represented as a <a href="files/AlphaVille-OSM.xml">graph</a> in the OpenStreetMap (OSM) format.
+									Twelve paths of similar complexity, 4x1.5km for the training and 8x2.5km for the main part of the evaluation, are <a href="files/AlphaVille-Tasks.xml">defined</a>. For each route, five cars: a red bus, a red firetruck, a brown humvee, a black-and-white police car, and a yellow taxi were parked on the way in a random order.</p>
+
+									<div>
+										<div style="width: 230px; float: left;">
+											<img src="img/AlphaVille/City.jpg" width="200px" class="imageWithShadow"/>
+											<p style="text-align: center;">1) Layout of the city</p>
+										</div>
+										<div style="width: 230px; float: left;">
+											<img src="img/AlphaVille/Task1.jpg" width="200px" class="imageWithShadow"/>
+											<p style="text-align: center;">2) Travel task</p>
+										</div>									
+										<div style="width: 230px; float: left;">
+											<img src="img/AlphaVille/Task2.jpg" width="200px" class="imageWithShadow"/>
+											<p style="text-align: center;">3) Look-around task</p>
+										</div>										
+										<div style="width: 230px; float: left;">
+											<img src="img/AlphaVille/CognitiveTask.jpg" width="200px" class="imageWithShadow"/>
+											<p style="text-align: center;">4) Cognitive task</p>
+										</div>										
+									</div>
+
+									<div style="clear:both;"></div>
+
+									<p>Tasks include:</p>
+									<ul>
+										<li>Travel Task (Camera Movement) - For this task, the participants are asked to simply follow a predefined path marked with red arrows projected on streets (see Figure 2 above). Once they arrived at the end of the path, they are asked to recall positions of the cars they have seen on the way (Figure 4).</li>
+										<li>Travel &amp; Look-Around Task (Camera Movement and Orientation - This task is similar to the first task. Additionally, the participants are asked to shoot green balloons that are deployed on the way (15 balloons for each route). The positions of the balloons are clearly marked in the environment (see Figure 3). To shoot a balloon the user has to orient the camera directly towards the target and wait for one second.</li>
+									</ul>
+
+									<p>	[1] Bowman D. A., Koller D., and Hodges L. F.: <a href=""><i>A methodology for the evaluation of travel techniques for immersive virtual environments.</i></a> VR, 3(2). 1998.</p>
+
+									<!-- <div class="separator"></div> -->
+
+
+
+									<!-- <img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Streets-BuildingBlocks/Screenshots/Set-3.jpg" alt="Set-3" width="130px"/>
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Streets-BuildingBlocks/Screenshots/Set-7.jpg" alt="Set-7" width="130px"/>
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Streets-BuildingBlocks/Screenshots/Set-5.jpg" alt="Set-5" width="130px"/>
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/House-Blue.jpg" width="130px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/LongHouse.jpg" width="130px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/TriangleBlock.jpg" width="130px"/> &#32;
+									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/SquareBlock.jpg" width="130px"/> &#32; -->
+
+
+									<!-- <h2 id="IndoorEnv">3D Indoor Environment</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptates, voluptate, culpa dolorem necessitatibus facere doloribus fugiat aspernatur voluptatibus autem deleniti suscipit molestiae atque possimus tempore dolores ullam saepe ex!</p>
+									
+									<h2 id="infoVisEnv">3D Information Visualisation Environment</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, voluptates, voluptate, culpa dolorem necessitatibus facere doloribus fugiat aspernatur voluptatibus autem deleniti suscipit molestiae atque possimus tempore dolores ullam saepe ex!</p> -->
+
+
+
+						    	</div>
+						    </div>
+						    <div class="shadowV" style="opacity: 0.15;"></div>
+							<div class="shadowV" style="opacity: 0.10;"></div>
+							<div class="shadowV" style="opacity: 0.05;"></div>
+
+					</div>
+	            </div>
+	        </div>
+	        <div class="footerBox">
+	        	<div id="footer"><p style="margin-top: 4px;">Copyright © 2014 <a href="http://team.inria.fr/potioc/">Inria</a></p></div>
+	        </div>
+	    </div>
+	</body>
+</html>

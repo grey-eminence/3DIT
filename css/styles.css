@@ -1,16 +1,30 @@
-﻿body {background:#ddd; color: #333; font-family: 'Segoe UI', Verdana; line-height:1.3; padding:0; margin:0; font-size: 10px; overflow: hidden;}
+﻿body {background:#eee; color: #333; font-family: 'Segoe UI', Verdana; line-height:1.3; padding:0; margin:0; font-size: 10px; overflow: hidden;}
 h1, h2, h3 {font-weight:normal; margin:0px; padding:0px;}
 h1 {color:#bbb; font-size: 28px; margin: 2px; padding: 0; text-align: center;}
 h2 {color:#aaa; font-size: 18px; margin-bottom: 10px;}
-h3 {color:#bbb; font-size: 16px; }
+h3 {color:#aaa; font-size: 17px; margin-bottom: 3px;}
 p {color:#444; font-size: 14px; margin-top: 0;}
 ul, ol {color:#444; font-size: 14px; padding-left: 20px;}
 li {margin-bottom: 2px;}
+#welcomeList li {margin-bottom: 5px;}
 
 a {color:#5092d1; text-decoration:none;}
 a:hover {color: #FF6600; text-decoration:underline;cursor:pointer;}
 
-#logo {text-align: left; margin: 10px;}
+#logo {text-align: left; margin: 10px; display: none;}
+
+@media all and (min-width: 1000px) {
+  #logo { display: block;}
+}
+
+.imageWithShadow {
+-moz-box-shadow: 3px 3px 5px #888;
+-webkit-box-shadow: 3px 3px 5px#888;
+box-shadow: 3px 3px 5px #888;
+opacity:0.87;
+border: 1px solid #aaa; margin-bottom:3px;
+margin: 0 13px;
+}
 
 input {border-color: #ddd; border: #ddd solid 1px; outline: none;}
 input:hover {border: #aaa solid 1px;}
@@ -18,7 +32,7 @@ input:active {border: #999 solid 1px;}
 input:focus {border: #aaa solid 1px;}
 #searchInput {height: 26px; font-size:16px; }
 
-#navigationPanel {position: absolute; top: 0; right: 0; font-family:'Segoe UI', Verdana; font-size: 15px; color: #333; margin: 20px; overflow: hidden;}
+#navigationPanel {position: absolute; top: 0; right: 0; font-family:'Segoe UI', Verdana; font-size: 15px; color: #333; margin: 20px 20px 20px 130px; overflow: hidden;}
 #navigationPanel a.sel {font-size:20px; color:#ccc;}
 #navigationPanel a:hover {}
 .navSpan {color:#ccc; margin:0em 9px;}
@@ -35,12 +49,12 @@ input:focus {border: #aaa solid 1px;}
 .pageBox { position:absolute; top:0px; left:0px; right:0px; bottom:0px; min-width:200px;}
 .headerBox { position: absolute; width: 100%; height: 60px; background-color: #f9f9f9; z-index: 7;}
 .footerBox { position:absolute; width:100%; height:26px; background-color: #f9f9f9; bottom:0px; z-index: 7;}
-.contentBox { position:absolute; width:100%; top: 60px; bottom:26px; background-color:#999;} 
+.contentBox { position:absolute; width:100%; top: 60px; bottom:26px; } 
 
-.contentBoxM { position:absolute; width:100%; top: 60px; bottom:26px; background-color:#999;overflow-y: auto;} 
-.contentBoxMain {width:1000px; height:100%; margin-left: auto; margin-right: auto; z-index: 20;}
-.contentBoxMainWhite { width:994px; height:100%; background-color:#fff; margin-left: 3px;}
-.contentBoxMainContent { width: 994px; display: table-cell; background-color: white; padding: 20px; }
+.contentBoxM { position:absolute; width:100%; top: 60px; bottom:26px; background-color:#ddd; overflow-y: auto;} 
+.contentBoxMain {max-width:1000px; height:100%; margin-left: auto; margin-right: auto; z-index: 20;}
+.contentBoxMainWhite { max-width:994px; height:100%; background-color:#fff; margin-left: 3px;}
+.contentBoxMainContent { max-width: 994px; display: table-cell; background-color: white; padding: 20px; }
 .contentBoxMainRightShadow {height:100%; width: 3px; z-index: 11; float: right;}
 .contentBoxMain p {color:#444; font-size: 16px; }
 .contentBoxMain h2 {color:#aaa; font-size: 20px; }
@@ -66,7 +80,7 @@ input:focus {border: #aaa solid 1px;}
 .contentBoxRightHiddenContent { padding: 0px; height: 100%;}
 .contentBoxRightHiddenShadow {position:absolute; left: 0px; height:100%; width: 3px; z-index: 5;}
 
-.contentBoxCenter { position:absolute; width:100%; left:0px; height:100%; background-color: #999; }    
+.contentBoxCenter { position:absolute; width:100%; left:0px; height:100%; background-color: #ddd; }    
 .contentBoxLeft, .contentBoxRight { overflow:auto; overflow-x:hidden; }
 .contentBoxFooter { position:absolute; width: 280px; bottom:0px; height:50px;}  
 
@@ -145,4 +159,12 @@ input:focus {border: #aaa solid 1px;}
 
 .css3DiFrame {
   width: 100%; height: 100%;
+}
+
+.separator {
+  clear: both;
+  background: url('../img/separator.png');
+  width: 779px;
+  height: 9px;
+  margin: 20px auto 15px;
 }
