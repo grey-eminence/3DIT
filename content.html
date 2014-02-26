@@ -5,6 +5,65 @@
 		<meta charset="utf-8">
 		<link href="css/styles.css" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" href="img/BoxSmall.ico">
+		<script src="js/jquery-1.11.0.min.js"></script>
+
+		<script type="text/javascript">
+
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+
+		</script>
+		<script type="text/javascript">
+
+			var config = {
+				width: 900, 
+				height: 550,
+				params: { enableDebugging:"0" }
+				
+			};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+				
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "files/AlphaVille-WebDemo.unity3d");
+			});
+
+		</script>
+
 	</head>
 
 	<body>
@@ -68,7 +127,7 @@
 
 									<h3>Street-level navigation tasks</h3>
 
-									<p>This section describes the tasks representing various conditions a user is likely to experience using a 3D map application while being in the street level. The tasks are based on the work of Bowman et al. [1].</p>
+									<p>This section describes the tasks representing various conditions a user is likely to experience using a 3D map application while being in the street level. The tasks are based on the work of Bowman D. A., Koller D., and Hodges L. F.: <a href=""><i>A methodology for the evaluation of travel techniques for immersive virtual environments.</i></a> VR, 3(2). 1998.</p>
 
 									<p>Specifically for these tasks the layout of the streets was represented as a <a href="files/AlphaVille-OSM.xml">graph</a> in the OpenStreetMap (OSM) format.
 									Twelve paths of similar complexity, 4x1.5km for the training and 8x2.5km for the main part of the evaluation, are <a href="files/AlphaVille-Tasks.xml">defined</a>. For each route, five cars: a red bus, a red firetruck, a brown humvee, a black-and-white police car, and a yellow taxi were parked on the way in a random order.</p>
@@ -100,19 +159,29 @@
 										<li>Travel &amp; Look-Around Task (Camera Movement and Orientation - This task is similar to the first task. Additionally, the participants are asked to shoot green balloons that are deployed on the way (15 balloons for each route). The positions of the balloons are clearly marked in the environment (see Figure 3). To shoot a balloon the user has to orient the camera directly towards the target and wait for one second.</li>
 									</ul>
 
-									<p>	[1] Bowman D. A., Koller D., and Hodges L. F.: <a href=""><i>A methodology for the evaluation of travel techniques for immersive virtual environments.</i></a> VR, 3(2). 1998.</p>
+									<p>The demo displayed below presents an application used in the <a href="studies.html#3DUI2014">evaluation of street-level navigation techniques in 3D digital cities on mobile touch devices</a>. Step 3 of the evaluation presents the Travel &amp; Look-Around task described above. Note that the system is not fully functional as it was intended for touch devices.</p>
+
+									<div id="unityPlayerPlaceHolder" class="imageWithShadow" style="height: 550px; width: 900px; margin: 30px 15px;" >
+										<img id="unityPlayerPlaceHolderImage" src="img/AlphaVille/UnityDemoPlaceholder.jpg" alt="" style="position: absolute; margin: 0; opacity: 0.85;">
+									</div>
+
+									<div id="unityPlayer" class="imageWithShadow" style="display:none; margin: 30px 15px;">
+										<div class="missing">
+											<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+												<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+											</a>
+										</div>
+										<div class="broken">
+											<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+												<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+											</a>
+										</div>
+									</div>
+
+
+
 
 									<!-- <div class="separator"></div> -->
-
-
-
-									<!-- <img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Streets-BuildingBlocks/Screenshots/Set-3.jpg" alt="Set-3" width="130px"/>
-									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Streets-BuildingBlocks/Screenshots/Set-7.jpg" alt="Set-7" width="130px"/>
-									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Streets-BuildingBlocks/Screenshots/Set-5.jpg" alt="Set-5" width="130px"/>
-									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/House-Blue.jpg" width="130px"/> &#32;
-									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/LongHouse.jpg" width="130px"/> &#32;
-									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/TriangleBlock.jpg" width="130px"/> &#32;
-									<img src="https://raw2.github.com/grey-eminence/3DCityBB/master/Models/Buildings/SquareBlock.jpg" width="130px"/> &#32; -->
 
 
 									<!-- <h2 id="IndoorEnv">3D Indoor Environment</h2>
@@ -136,5 +205,31 @@
 	        	<div id="footer"><p style="margin-top: 4px;">Copyright © 2014 <a href="http://team.inria.fr/potioc/">Inria</a></p></div>
 	        </div>
 	    </div>
+
+		<script type="text/javascript">
+		
+			var unityPlayerPlaceHolder = document.getElementById( 'unityPlayerPlaceHolder' );
+			var unityPlayerPlaceHolderImage = document.getElementById( 'unityPlayerPlaceHolderImage' );
+			var unityPlayer = document.getElementById( 'unityPlayer' );
+
+			unityPlayerPlaceHolder.addEventListener( 'mouseover', function ( event ) {
+				unityPlayerPlaceHolderImage.style.opacity = '1';
+			} );
+
+			unityPlayerPlaceHolder.addEventListener( 'mouseout', function ( event ) {
+				unityPlayerPlaceHolderImage.style.opacity = '0.85';
+			} );
+
+			unityPlayerPlaceHolder.addEventListener( 'click', function ( event ) {
+				unityPlayerPlaceHolder.style.display = 'none';
+				unityPlayer.style.display = 'block';
+			} );
+
+			// function onmouseoverUnityPlayerPlaceHolder() {
+			// 	unityPlayerPlaceHolderImage.style.opacity = '1';
+			// }
+
+		</script>
+
 	</body>
 </html>

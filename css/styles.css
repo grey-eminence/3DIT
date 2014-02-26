@@ -21,7 +21,7 @@ a:hover {color: #FF6600; text-decoration:underline;cursor:pointer;}
 -moz-box-shadow: 3px 3px 5px #888;
 -webkit-box-shadow: 3px 3px 5px#888;
 box-shadow: 3px 3px 5px #888;
-opacity:0.87;
+opacity: 1;
 border: 1px solid #aaa; margin-bottom:3px;
 margin: 0 13px;
 }
@@ -167,4 +167,20 @@ input:focus {border: #aaa solid 1px;}
   width: 779px;
   height: 9px;
   margin: 20px auto 15px;
+}
+
+/* Unity Stuff: */
+div.broken, div.missing { margin: auto; position: relative; top: 50%; width: 193px; }
+div.broken a, div.missing a { height: 63px; position: relative; top: -31px; }
+div.broken img, div.missing img { border-width: 0px; }
+div.broken { display: none; }
+div#unityPlayer { cursor: default; height: 550px; width: 900px; }
+
+#unityPlayerPlaceHolderImage {
+  cursor: pointer;
+  -webkit-transition: opacity .4s ;
+  -moz-transition: opacity .4s ;
+  -o-transition: opacity .4s ;
+  -ms-transition: opacity .4s ;
+  transition: opacity .4s ;
 }
