@@ -5,6 +5,24 @@
 		<meta charset="utf-8">
 		<link href="css/styles.css" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" href="img/BoxSmall.ico">
+
+	    <link rel="stylesheet" href="js/engine/css/videolightbox.css" type="text/css" />
+	    <link rel="stylesheet" href="js/engine/css/overlay-minimal.css" type="text/css"/>
+	    <style type="text/css">#videogallery a#videolb{display:none}</style>
+
+	    <script src="js/engine/js/jquery.tools.min.js" type="text/javascript"></script>
+		<script src="js/engine/js/swfobject.js" type="text/javascript"></script>
+		<script src="js/engine/js/videolightbox.js" type="text/javascript"></script>
+
+	    <script type="text/javascript">
+
+			function onYouTubePlayerReady(playerId) {
+				ytplayer = document.getElementById("video_overlay");
+				ytplayer.setVolume(100);
+			} 
+
+		</script> 
+
 	</head>
 
 	<body>
@@ -43,10 +61,22 @@
 						    			<li><a href="#3DUI2014">A Study of Street-level Navigation Techniques in 3D Digital Cities on Mobile Touch Devices</a></li>
 						    		</ul> -->
 
+
+
 						    		<h2 id="3DUI2014">A Study of Street-level Navigation Techniques in 3D Digital Cities on Mobile Touch Devices</h2>
+
+	                                <div id="videogallery" style="height: 180px; float: right; width: 300px; margin: 20px 0 0 20px;">
+		                                <div style="text-align:center;">
+	                                        <a rel="#voverlay" href="http://vimeo.com/moogaloop.swf?clip_id=87671803&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;autoplay=1" title="A Study of Street-level Navigation Techniques in 3D Digital Cities on Mobile Touch Devices"><img src="img/3DUIStudy.png" alt="A Study of Street-level Navigation Techniques in 3D Digital Cities on Mobile Touch Devices" /></a>
+	                                        <p>Presentation of the study</p>
+	                                    </div>
+	                                </div>
+
 						    		<p><i>By Jacek Jankowski, Thomas Hulin, and Martin Hachet</i></p>
 						    		<p>To characterize currently most common interaction techniques for street-level navigation in 3D digital cities for mobile touch devices in terms of their efficiency and usability, we conducted a user study, where we compared target selection (Go-To), rate control (Joystick), position control, and stroke-based control navigation metaphors. The results suggest users performed best with the Go-To interaction technique. The subjective comments showed a preference of novices towards Go-To and expert users towards Joystick technique.</p>
 									
+
+
 									<!-- <div>
 										<div style="width: 230px; float: left;">
 											<img src="img/3DUI2014/1.jpg" width="200px"/>
